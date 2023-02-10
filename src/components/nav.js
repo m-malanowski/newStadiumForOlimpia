@@ -22,7 +22,7 @@ const Nav = () => {
                     className="nav__logo"
                     formats={["auto", "webp", "avif"]}
                     src="../images/logo.png"
-                    width={100}
+                    width={85}
                     quality={95}
                     alt="Olimpia Elblag Logo"
                 />
@@ -33,6 +33,7 @@ const Nav = () => {
                     <li>Główna</li>
                     <li>Artykuły</li>
                     <li>Kontakt</li>
+                    <li>Wesprzyj nas</li>
                     <li>Olimpia Elbląg</li>
                 </ul>
             </div>

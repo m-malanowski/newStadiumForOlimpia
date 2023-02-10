@@ -29,6 +29,7 @@ const About = () => {
                     <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <span>tempor incididunt ut labore et dolore magna aliqua</span>. Ut enim ad minim veniam. quis nostrud exercitation</h3>
                 </div>
             </div>
+
         </div>
     )
 }

@@ -15,6 +15,11 @@
 
 .section{
   padding: var(--space-xl) 0;
+
+  &--full{
+    margin-left: calc(var(--space-xl) * -1);
+    width: 100vw;
+  }
 }
 
 // --------------------------------

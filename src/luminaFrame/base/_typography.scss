@@ -28,7 +28,7 @@
   //--font-primary: 'Poppins Regular', 'Helvetica', 'Arial', sans-serif;
   //--font-primary-light: 'Poppins Light', 'Helvetica', 'Arial', sans-serif;
   //--font-primary-medium: 'Poppins Medium', 'Helvetica', 'Arial', sans-serif;
-  --body-font-weight: 400;
+  --body-font-weight: 600;
   --text-base-size: 10px;
   --text-scale-ratio: 1.55;
 
@@ -54,7 +54,7 @@
 }
 
 body {
-  font-family: var(--font-primary, sans-serif);
+  font-family: var(--font-primary-light, sans-serif);
   color: var(--color-contrast, hsl(0, 0%, 40%));
   font-weight: var(--body-font-weight, normal);
   line-height: var(--body-line-height);
@@ -92,6 +92,7 @@ h2 {
 h3 {
   font-size: calc(26px + (32 - 26) * ((100vw - 320px) / (1900 - 360)));
   //font-size: var(--text-xl, 1.375rem);
+  font-family: var(--font-primary-light);
 }
 
 h4 {

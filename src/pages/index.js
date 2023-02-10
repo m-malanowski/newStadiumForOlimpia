@@ -5,6 +5,11 @@ import Seo from "../components/seo"
 import Hero from "../components/hero";
 import About from "../components/about";
 import Cta from "../components/cta";
+import HorizontalText from "../components/horizontalText";
+import Petition from "../components/petition";
+import News from "../components/news";
+import Projects from "../components/projects";
+import Footer from "../components/footer";
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -13,9 +18,15 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
 
-      <Hero />
-      <About />
+        <Hero />
+        <About />
         <Cta />
+        <HorizontalText />
+        <Petition />
+        <News />
+
+        <Projects />
+        <Footer />
 
     </Layout>
   )

@@ -8,11 +8,11 @@
   @include defineColorHSL(--color-primary-light, 205, 85%, 40%);
   @include defineColorHSL(--color-primary-lighter, 205, 85%, 45%);
 
-  @include defineColorHSL(--color-accent-darker, 285, 100%, 35%);
-  @include defineColorHSL(--color-accent-dark, 285, 100%, 45%);
-  @include defineColorHSL(--color-accent, 285, 100%, 50%);
-  @include defineColorHSL(--color-accent-light, 285, 100%, 55%);
-  @include defineColorHSL(--color-accent-lighter, 285, 100%, 65%);
+  @include defineColorHSL(--color-accent-darker,  53, 96%, 45%);
+  @include defineColorHSL(--color-accent-dark,  53, 96%, 50%);
+  @include defineColorHSL(--color-accent, 53, 96%, 57%);
+  @include defineColorHSL(--color-accent-light,  53, 96%, 65%);
+  @include defineColorHSL(--color-accent-lighter,  53, 96%, 70%);
 
   @include defineColorHSL(--color-black, 204, 28%, 7%);
   @include defineColorHSL(--color-white, 0, 0%, 100%);

@@ -24,9 +24,6 @@ const Layout = ({ location, title, children }) => {
     <div data-is-root-path={isRootPath}>
       <Nav />
       <main className="container">{children}</main>
-      <footer>
-       <small> © {new Date().getFullYear()}</small>
-      </footer>
     </div>
   )
 }

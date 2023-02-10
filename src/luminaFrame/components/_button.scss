@@ -15,7 +15,7 @@
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 1px;
-
+  font-family: var(--font-primary);
 
   &:hover{
     cursor: pointer;
@@ -46,8 +46,9 @@
   //}
 
   &--third {
-    background-color: var(--color-contrast-high);
-    color: var(--color-white);
+    background-color: var(--color-white);
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
     &.active{
       background-color: var(--color-primary);
       color: var(--color-contrast);

@@ -247,4 +247,8 @@
   &:hover{
     text-decoration: underline;
   }
+  svg{
+    margin-left: var(--space-xs);
+  }
 }
+
