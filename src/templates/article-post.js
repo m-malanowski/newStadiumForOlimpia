@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import ArticleHero from "../components/articleHero";
 import Footer from "../components/footer";
 import Projects from "../components/projects";
+import ReactMarkdown from "react-markdown";
 
 const ArticleSingle = ({data, location}) => {
 
@@ -32,7 +33,8 @@ const ArticleSingle = ({data, location}) => {
                     </svg>
                 </div>
                 <div className="col-8@md">
-                    <p>{data.article.content.data.content}</p>
+                    <ReactMarkdown children={data.article.content.data.content} />
+                    {/*<p>{data.article.content.data.content}</p>*/}
                 </div>
                 <div className="col-2@md"></div>
 
