@@ -110,6 +110,32 @@ body {
     margin-left: calc(var(--space-xxl) * -1);
   }
 
+
+  &__down{
+    position: absolute;
+    right: 0;
+    bottom: var(--space-lg);
+    width: 60px;
+    height: 60px;
+    //background-color: var(--color-primary);
+    border-radius: 100%;
+    display: grid;
+    place-items: center;
+    border: 1px solid var(--color-white);
+
+    svg{
+      animation-name: bounce-1;
+      animation-timing-function: linear;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+
+    span{
+      color: var(--color-white  );
+      //color: var(--color-accent);
+    }
+  }
+
   &__cta {
     margin-top: var(--space-xxxl);
     width: 33.3%;
@@ -438,3 +464,14 @@ body {
   }
 }
 
+
+
+
+
+
+
+@keyframes bounce-1 {
+  0%   { transform: translateY(5px); }
+  50%  { transform: translateY(-5px); }
+  100% { transform: translateY(5px); }
+}
