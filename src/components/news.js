@@ -23,11 +23,9 @@ const News = ({showHeading}) => {
         }
   `)
 
-
     return (
         <div className="section">
             <div className="grid gap-lg">
-
                 <h2 className="uppercase news__heading">Aktualności</h2>
                 <div className="news">
 
@@ -39,10 +37,8 @@ const News = ({showHeading}) => {
                               slug={edge.node.slug}
                         />
 
-
                     ))}
 
-                    {/*<Card/>*/}
                 </div>
             </div>
         </div>

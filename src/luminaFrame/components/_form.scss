@@ -83,9 +83,10 @@
     &:focus, &:active {
       border-bottom-color: var(--color-primary);
       outline: none;
+      border-width: 0 0 2px;
 
       &::placeholder {
-        color: alpha(var(--color-contrast), .7);
+        color: var(--color-primary);
       }
     }
   }
@@ -95,22 +96,22 @@
  .form{
 
    small{
-     color: alpha(var(--color-white), 0.8) !important;
+     color: alpha(var(--color-white), 0.8) ;
    }
 
    &__input {
-     border-bottom-color: alpha(var(--color-white), 0.8) !important;
+     border-bottom-color: alpha(var(--color-white), 0.8) ;
      color: var(--color-white);
 
      &::placeholder {
-       color: alpha(var(--color-white), .5) !important;
+       color: alpha(var(--color-white), .5);
      }
 
      &:focus, &:active {
-       border-bottom-color: var(--color-accent) !important;
+       border-bottom-color: var(--color-accent) ;
 
        &::placeholder {
-         color: alpha(var(--color-white), .8) !important;
+         color: alpha(var(--color-white), .8) ;
        }
      }
    }

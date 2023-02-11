@@ -24,9 +24,9 @@ const Projects = () => {
 
     return (
         <div className="section section--full section--primary">
-            <div className="container">
+            <div className="container grid gap-lg">
                 <h2 className="uppercase color-white projects__heading">Podobne realizacje</h2>
-                <div className="projects margin-top-lg">
+                <div className="projects">
 
                     {data.allStrapiProject.edges.map(edge => (
 

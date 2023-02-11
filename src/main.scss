@@ -2,7 +2,6 @@ body {
   //background-color: var(--color-white);
   background-color: #f8f8f8;
   overflow-x: hidden;
-
 }
 
 .nav {
@@ -14,21 +13,15 @@ body {
   align-items: center;
   padding: var(--space-sm) 0;
   border-bottom: 1px solid rgba(255, 255, 255, .3);
-
   z-index: 1;
-
   transition: .3s background-color ease-in;
   background-color: transparent;
-
-
 
   &.active {
     transition: .3s background-color ease-in;
     background-color: rgba(0, 0, 0, .6);
-
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-
     border-bottom: none;
   }
 
@@ -54,7 +47,7 @@ body {
       gap: var(--space-sm);
 
       li {
-        text-transform: uppercase;
+        //text-transform: uppercase;
         color: var(--color-white);
         font-size: 16px;
         letter-spacing: 1px;
@@ -320,12 +313,12 @@ body {
     align-items: flex-start;
 
     li {
-      padding: var(--space-xxxxs) 0;
+      padding: var(--space-xxxs) 0;
       color: var(--color-white);
 
-      &:hover {
-        border-bottom: 1px solid var(--color-accent);
-      }
+      //&:hover {
+      //  border-bottom: 1px solid var(--color-accent);
+      //}
     }
   }
 
@@ -393,6 +386,13 @@ body {
 #projects, #contact{
 
   .footer{
+    .links{
+      li{
+        &:before {
+          background: var(--color-primary);
+        }
+      }
+    }
 
     ul li{
       color: var(--color-cpntrast);
@@ -410,3 +410,31 @@ body {
 .active-link{
   color: var(--color-accent)
 }
+.links{
+  li{
+    display: inline-block;
+    position: relative;
+
+    &:hover{
+      cursor: pointer;
+    }
+
+    &:before {
+      background: none repeat scroll 0 0 transparent;
+      bottom: 0;
+      content: "";
+      display: block;
+      height: 1px;
+      left: 50%;
+      position: absolute;
+      background: var(--color-accent);
+      transition: width 0.3s ease 0s, left 0.3s ease 0s;
+      width: 0;
+    }
+    &:hover:before {
+      width: 100%;
+      left: 0;
+    }
+  }
+}
+

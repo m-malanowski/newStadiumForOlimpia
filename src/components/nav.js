@@ -30,12 +30,12 @@ const Nav = () => {
             </a>
 
             <div className="nav__links">
-                <ul>
+                <ul className="links">
                     <li><Link to="/" activeClassName="active-link">Główna</Link></li>
                     <li><Link to="/artykuly" activeClassName="active-link">Artykuły</Link></li>
                     <li><Link to="/podobne-realizacje" activeClassName="active-link">Podobne realizacje</Link></li>
                     {/*<li><Link to="/kontakt" activeClassName="active-link">Wesprzyj nas</Link></li>*/}
-                    <li><a href="https://zksolimpia.pl/" target="_blank">Olimpia Elbląg</a></li>
+                    {/*<li><a href="https://zksolimpia.pl/" target="_blank">Olimpia Elbląg</a></li>*/}
                     <li><Link to="/kontakt" activeClassName="active-link">Kontakt</Link></li>
                 </ul>
             </div>
