@@ -14,17 +14,19 @@ const Petition = () => {
                         Ut enim ad minim veniam. quis nostrud exercitation
                     </h3>
 
-
-                    <div className="form">
+                    <form className="form"
+                          action="https://formspree.io/f/mnqypgna"
+                          method="POST"
+                    >
                         <div className="form__inputs margin-top-lg">
                             <input type="text" className="form__input" placeholder="Twoje imię" name="name"/>
                             <input type="text" className="form__input" placeholder="Twoje Nazwisko" name="email"/>
                             <input type="text" className="form__input" placeholder="Napisz coś więcej"
                                    name="description"/>
 
-                            <button className="button button--fourth margin-left-auto">Podpisz list</button>
+                            <button type="submit" className="button button--fourth margin-left-auto">Podpisz list</button>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>

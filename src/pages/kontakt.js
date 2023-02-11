@@ -40,7 +40,10 @@ const Contact = ({data, location}) => {
 
                         </div>
                         <div className="col-6@md">
-                            <div className="form">
+                            <form className="form"
+                                  action="https://formspree.io/f/xjvdyakv"
+                                  method="POST"
+                            >
                                 <div className="form__inputs margin-top-lg">
                                     <input type="text" className="form__input" placeholder="Twoje imię" name="name"/>
                                     <input type="text" className="form__input" placeholder="Adres email" name="mail"/>
@@ -50,9 +53,9 @@ const Contact = ({data, location}) => {
                                         <small className="color-white margin-top-xxs">Używając tego formularza zgadzam się na przetwarzanie przekazywanych danych w celu przygotowania i prezentacji oferty oraz akceptuję politykę prywatności.</small>
                                     </div>
 
-                                    <button className="button button--third margin-left-auto">Wyślij wiadomość</button>
+                                    <button type="submit" className="button button--third margin-left-auto">Wyślij wiadomość</button>
                                 </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>

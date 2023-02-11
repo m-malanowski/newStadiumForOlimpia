@@ -363,24 +363,37 @@ body {
   }
 }
 
-
 #articles {
-  h2.uppercase {
+  .news__heading {
     display: none;
   }
+}
 
-
+#projects{
+  .projects__heading {
+    display: none;
+  }
+  .section--primary{
+    background-color: #f8f8f8;
+  }
 }
 
 #contact {
   background-color: var(--color-primary);
 
   .section--primary{
-    background-color: var(--color-white);
+    background-color: #f8f8f8;
   }
 
   .footer{
     grid-template-columns: 1fr 2fr 1fr;
+  }
+}
+
+#projects, #contact{
+
+  .footer{
+
     ul li{
       color: var(--color-cpntrast);
     }
@@ -392,6 +405,7 @@ body {
     }
   }
 }
+
 
 .active-link{
   color: var(--color-accent)

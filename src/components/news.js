@@ -28,7 +28,7 @@ const News = ({showHeading}) => {
         <div className="section">
             <div className="grid gap-lg">
 
-                <h2 className="uppercase">Aktualności</h2>
+                <h2 className="uppercase news__heading">Aktualności</h2>
                 <div className="news">
 
                     {data.allStrapiArticle.edges.map(edge => (
