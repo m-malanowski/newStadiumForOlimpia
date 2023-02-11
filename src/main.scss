@@ -38,7 +38,7 @@ body {
   }
 
   &__logo {
-    position: absolute;
+    position: absolute !important;
     width: 85px;
     top: calc(var(--space-md) * -1);
   }
