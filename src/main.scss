@@ -82,14 +82,10 @@ body {
     height: 60vh;
   }
 
-  &--articles {
+  &--article {
+    display: grid;
     height: 60vh;
-
-    .hero__cta {
-      width: calc(100% - 2 * var(--space-xxxxl));
-      margin-left: auto;
-      margin-right: auto;
-    }
+    align-items: flex-end;
   }
 
   &__image {
@@ -350,11 +346,29 @@ body {
   }
 }
 
+.article{
+  &__content{
+    margin: var(--space-xl) 0;
+    p{
+      font-size: 20px;
+      line-height: 1.4;
+      color: var(--color-contrast-higher);
+    }
+  }
+  &__social{
+    display: flex;
+    gap: var(--space-xs);
+    align-items: flex-end;
+  }
+}
+
 
 #articles {
   h2.uppercase {
     display: none;
   }
+
+
 }
 
 #contact {

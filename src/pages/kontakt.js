@@ -3,7 +3,6 @@ import {Helmet} from "react-helmet";
 import Footer from "../components/footer";
 import Layout from "../components/layout"
 import {graphql} from "gatsby";
-import Projects from "../components/projects";
 
 const Contact = ({data, location}) => {
     const siteTitle = data.site.siteMetadata?.title || `Title`

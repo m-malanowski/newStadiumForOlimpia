@@ -18,7 +18,7 @@ const Footer = () => {
                         <li><Link to="/kontakt" activeClassName="active-link">Kontakt</Link></li>
                     </ul>
 
-                    <p>© 2023 nowystadiondlaelblaga.pl</p>
+                    <p>© 2023 stadiondlaelblaga.pl</p>
                 </div>
             </div>
         </div>
