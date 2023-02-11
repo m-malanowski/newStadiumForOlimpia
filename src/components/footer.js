@@ -1,4 +1,5 @@
 import * as React from "react";
+import {Link} from "gatsby";
 
 const Footer = () => {
     return (
@@ -9,13 +10,12 @@ const Footer = () => {
                         <li>Facebook</li>
                         <li>Instagram</li>
                     </ul>
-
                     <ul>
-                        <li>Główna</li>
-                        <li>Aktualności</li>
-                        <li>Kontakt</li>
-                        <li>Olimpia Elbląg</li>
-                        <li>Wesprzyj nas</li>
+                        <li><Link to="/" activeClassName="active-link">Główna</Link></li>
+                        <li><Link to="/artykuly" activeClassName="active-link">Artykuły</Link></li>
+                        <li><Link to="/kontakt" activeClassName="active-link">Wesprzyj nas</Link></li>
+                        <li><a href="https://zksolimpia.pl/">Olimpia Elbląg</a></li>
+                        <li><Link to="/kontakt" activeClassName="active-link">Kontakt</Link></li>
                     </ul>
 
                     <p>© 2023 nowystadiondlaelblaga.pl</p>

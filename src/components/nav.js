@@ -1,6 +1,7 @@
 import * as React from "react"
 import {StaticImage} from "gatsby-plugin-image";
 import { useState, useEffect } from "react"
+import {Link} from "gatsby";
 
 const Nav = () => {
     const [isScrolling, setIsScrolling] = useState(false)
@@ -30,11 +31,11 @@ const Nav = () => {
 
             <div className="nav__links">
                 <ul>
-                    <li>Główna</li>
-                    <li>Artykuły</li>
-                    <li>Kontakt</li>
-                    <li>Wesprzyj nas</li>
-                    <li>Olimpia Elbląg</li>
+                    <li><Link to="/" activeClassName="active-link">Główna</Link></li>
+                    <li><Link to="/artykuly" activeClassName="active-link">Artykuły</Link></li>
+                    <li><Link to="/kontakt" activeClassName="active-link">Wesprzyj nas</Link></li>
+                    <li><a href="https://zksolimpia.pl/">Olimpia Elbląg</a></li>
+                    <li><Link to="/kontakt" activeClassName="active-link">Kontakt</Link></li>
                 </ul>
             </div>
 

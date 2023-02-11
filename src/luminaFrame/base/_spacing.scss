@@ -23,7 +23,7 @@
   --space-xxxxl: calc(11.75 * var(--space-unit));
   //--component-padding: var(--space-xxl);
   //--component-padding: var(--space-md);
-  --component-padding: var(--space-xl);
+  --component-padding: var(--space-xxl);
 
   @include breakpoint(sm, "not all") {
     --component-padding: var(--space-md);

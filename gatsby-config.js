@@ -61,53 +61,15 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
-      resolve: `gatsby-plugin-feed`,
+      resolve: `gatsby-source-strapi`,
       options: {
-        query: `
-          {
-            site {
-              siteMetadata {
-                title
-                description
-                siteUrl
-                site_url: siteUrl
-              }
-            }
-          }
-        `,
-        feeds: [
-          {
-            serialize: ({ query: { site, allMarkdownRemark } }) => {
-              return allMarkdownRemark.nodes.map(node => {
-                return Object.assign({}, node.frontmatter, {
-                  description: node.excerpt,
-                  date: node.frontmatter.date,
-                  url: site.siteMetadata.siteUrl + node.fields.slug,
-                  guid: site.siteMetadata.siteUrl + node.fields.slug,
-                  custom_elements: [{ "content:encoded": node.html }],
-                })
-              })
-            },
-            query: `{
-              allMarkdownRemark(sort: {frontmatter: {date: DESC}}) {
-                nodes {
-                  excerpt
-                  html
-                  fields {
-                    slug
-                  }
-                  frontmatter {
-                    title
-                    date
-                  }
-                }
-              }
-            }`,
-            output: "/rss.xml",
-            title: "Gatsby Starter Blog RSS Feed",
-          },
-        ],
-      },
+        apiURL: 'http://localhost:1337',
+        // apiURL: 'https://bbs-polska.herokuapp.com',
+        accessToken: '488ba4f1626036dcffb58b4cd2a32c5a32ca1e920e8f42431ed525d6ce0467780bdb84730276f43e5152897df3134e709c2d403c9e1cae2aa0f5ee615893814571c2a49593536de99d09db1b5fb05ccec2a87fe2b927faf17dbfbfec489e4a12e000f74bc777d4b16ba3e6d2f766292ad5c66f2baaafd934f71518da9fe01fd0',
+        // collectionTypes: ['article', 'project'],
+        collectionTypes: ['article', 'project'],
+        // contentTypes: ['articles', 'projects'],
+      }
     },
     {
       resolve: `gatsby-plugin-manifest`,

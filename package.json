@@ -20,11 +20,13 @@
     "gatsby-remark-prismjs": "^7.5.0",
     "gatsby-remark-responsive-iframe": "^6.5.0",
     "gatsby-source-filesystem": "^5.5.0",
+    "gatsby-source-strapi": "^3.0.4",
     "gatsby-transformer-remark": "^6.5.0",
     "gatsby-transformer-sharp": "^5.5.0",
     "prismjs": "^1.29.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-helmet": "^6.1.0",
     "sass": "^1.58.0"
   },
   "devDependencies": {

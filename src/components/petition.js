@@ -22,7 +22,7 @@ const Petition = () => {
                             <input type="text" className="form__input" placeholder="Napisz coś więcej"
                                    name="description"/>
 
-                            <button className="button button--third margin-left-auto">Podpisz list</button>
+                            <button className="button button--fourth margin-left-auto">Podpisz list</button>
                         </div>
                     </div>
                 </div>

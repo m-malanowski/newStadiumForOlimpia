@@ -58,6 +58,11 @@
     }
   }
 
+  &--fourth{
+    background-color: var(--color-primary);
+    color: var(--color-white);
+  }
+
   &__icon {
     width: 25px;
     transform: scaleX(-1);

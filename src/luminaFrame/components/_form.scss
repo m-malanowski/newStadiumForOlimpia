@@ -90,3 +90,34 @@
     }
   }
 }
+
+#contact{
+ .form{
+
+   small{
+     color: alpha(var(--color-white), 0.8) !important;
+   }
+
+   &__input {
+     border-bottom-color: alpha(var(--color-white), 0.8) !important;
+     color: var(--color-white);
+
+     &::placeholder {
+       color: alpha(var(--color-white), .5) !important;
+     }
+
+     &:focus, &:active {
+       border-bottom-color: var(--color-accent) !important;
+
+       &::placeholder {
+         color: alpha(var(--color-white), .8) !important;
+       }
+     }
+   }
+
+ }
+
+
+
+
+}
