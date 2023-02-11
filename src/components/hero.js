@@ -10,6 +10,7 @@ const Hero = () => {
                 <h1>Nowy stadion dla Elbląga</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
 
+                {/*<a href="#petition" className="button button--secondary margin-top-lg"> Podpisz list </a>*/}
                 <button className="button button--secondary margin-top-lg"> Podpisz list </button>
 
             </div>

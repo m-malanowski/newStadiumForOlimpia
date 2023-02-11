@@ -18,7 +18,7 @@ const Nav = () => {
 
     return (
         <nav className={isScrolling ? "nav active" : "nav"}>
-            <div className="nav__logo-wrapper">
+            <a href="/" className="nav__logo-wrapper">
                 <StaticImage
                     className="nav__logo"
                     formats={["auto", "webp", "avif"]}
@@ -27,14 +27,14 @@ const Nav = () => {
                     quality={95}
                     alt="Olimpia Elblag Logo"
                 />
-            </div>
+            </a>
 
             <div className="nav__links">
                 <ul>
                     <li><Link to="/" activeClassName="active-link">Główna</Link></li>
                     <li><Link to="/artykuly" activeClassName="active-link">Artykuły</Link></li>
                     <li><Link to="/kontakt" activeClassName="active-link">Wesprzyj nas</Link></li>
-                    <li><a href="https://zksolimpia.pl/">Olimpia Elbląg</a></li>
+                    <li><a href="https://zksolimpia.pl/" target="_blank">Olimpia Elbląg</a></li>
                     <li><Link to="/kontakt" activeClassName="active-link">Kontakt</Link></li>
                 </ul>
             </div>
