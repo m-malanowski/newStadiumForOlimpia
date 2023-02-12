@@ -11,12 +11,19 @@ const Petition = () => {
             const res = await fetch("https://stadion-dla-elblaga.herokuapp.com/api/support/");
             const data = await res.json();
             setNumber(data.data.attributes.number);
-        };
-
+        }
         fetchData();
     }, []);
 
+    const foo = (event) =>{
+        handleSubmit(event)
+        setTimeout(()=>{
+            handleSupportUpdate()
+        },1000)
+    }
+
     const handleSupportUpdate = async () => {
+        console.log(number)
 
         await fetch("https://stadion-dla-elblaga.herokuapp.com/api/support/", {
             method: "PUT",
@@ -53,7 +60,7 @@ const Petition = () => {
                         <h2 className="color-primary margin-y-xl">Dziękujęmy za wsparcie!</h2>
                         :
                         <form
-                            onSubmit={handleSubmit}
+                            onSubmit={foo}
                             className="form"
                         >
                             <div className="form__inputs margin-top-lg">
@@ -75,30 +82,14 @@ const Petition = () => {
                                     errors={state.errors}
                                 />
 
-                                <button onClick={handleSupportUpdate} disabled={state.submitting} type="submit"
+                                <button
+                                    disabled={state.submitting} type="submit"
                                         className="button button--fourth margin-left-auto">Podpisz list
                                 </button>
                             </div>
                         </form>
-
                     }
 
-
-
-                    {/*<button onClick={handleSupportUpdate} className="button button--fourth margin-left-auto">Podpisz list</button>*/}
-
-                    {/*<form className="form"*/}
-                    {/*      action="https://formspree.io/f/mnqypgna"*/}
-                    {/*      method="POST"*/}
-                    {/*>*/}
-                    {/*    <div className="form__inputs margin-top-lg">*/}
-                    {/*        <input type="text" className="form__input" placeholder="Twoje imię" name="name" required/>*/}
-                    {/*        <input type="text" className="form__input" placeholder="Twoje Nazwisko" name="email" required/>*/}
-                    {/*        <input type="text" className="form__input" placeholder="Napisz coś więcej"*/}
-                    {/*               name="description" required/>*/}
-
-                    {/*    </div>*/}
-                    {/*</form>*/}
                 </div>
             </div>
         </div>
