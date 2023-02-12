@@ -1,13 +1,27 @@
 import * as React from "react"
+import {motion} from "framer-motion";
+
 const Hero = () => {
+    const transition = {duration: 1., ease: [0.6, 0.01, -0.05, 0.9]};
 
     return (
         <div className="hero">
-            <div className="hero__image"></div>
+            <motion.div className="hero__image"
+                        initial={{ transform: 'scale(1.2)',}}
+                        animate={{
+                            transform: 'scale(1)',
+                            transition: {delay: .3, ...transition},
+                        }}
+                        exit={{
+                            height: "80vh",
+                            transition: {delay: .2, ...transition},
+                        }}
+            ></motion.div>
+
             <div className="hero__image--overlay"></div>
 
             <div className="hero__cta">
-                <h1>Nowy stadion dla Elbląga</h1>
+                <h1>Nowy stadion <br/> dla Elbląga</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
                 {/*<a href="#petition" className="button button--secondary margin-top-lg"> Podpisz list </a>*/}
                 <button className="button button--secondary margin-top-lg"> Podpisz list </button>

@@ -17,6 +17,10 @@
   letter-spacing: 1px;
   font-family: var(--font-primary);
 
+  @include breakpoint(md, "not all") {
+    padding: var(--space-base) var(--space-lg);
+  }
+
   &:hover{
     cursor: pointer;
   }

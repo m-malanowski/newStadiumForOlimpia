@@ -18,15 +18,16 @@ const Nav = () => {
 
     return (
         <nav className={isScrolling ? "nav active" : "nav"}>
-            <a href="/" className="nav__logo-wrapper">
-                <StaticImage
-                    className="nav__logo"
-                    formats={["auto", "webp", "avif"]}
-                    src="../images/logo.png"
-                    width={85}
-                    quality={95}
-                    alt="Olimpia Elblag Logo"
-                />
+            <a href="/" className="nav__logo-wrapper color-white">
+                stadiondlaelblaga.pl
+                {/*<StaticImage*/}
+                {/*    className="nav__logo"*/}
+                {/*    formats={["auto", "webp", "avif"]}*/}
+                {/*    src="../images/logo.png"*/}
+                {/*    width={85}*/}
+                {/*    quality={95}*/}
+                {/*    alt="Olimpia Elblag Logo"*/}
+                {/*/>*/}
             </a>
 
             <div className="nav__links">

@@ -19,6 +19,10 @@
   &--full{
     margin-left: calc(var(--space-xxl) * -1);
     width: 100vw;
+    @include breakpoint(sm, "not all") {
+      margin-left: calc(var(--space-md) * -1);
+    }
+
   }
 }
 

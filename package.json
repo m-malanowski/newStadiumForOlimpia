@@ -10,6 +10,8 @@
   "dependencies": {
     "@fontsource/merriweather": "^4.5.14",
     "@fontsource/montserrat": "^4.5.14",
+    "@formspree/react": "^2.4.1",
+    "framer-motion": "^9.0.2",
     "gatsby": "^5.6.0",
     "gatsby-plugin-feed": "^5.5.0",
     "gatsby-plugin-image": "^3.5.0",

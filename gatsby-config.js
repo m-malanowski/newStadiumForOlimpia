@@ -66,9 +66,9 @@ module.exports = {
         // apiURL: 'http://localhost:1337',
         apiURL: 'https://stadion-dla-elblaga.herokuapp.com',
         accessToken: '8ede3779ed85ebe401bf5d619f2703b883c5483b23027a902d21fb601f57204677b6e3076d39d11eb32c01c1a9d0f1913c596b1ac84e4eacc41cc9888f3eb6acb308c3a3bf1a1a2d5b9288c3536e3b31220366af982fd7fdd0ca98832a02adfcc9650211e33f49966a735cbe6fabfd95ec32c5485017accc6abbfd4cb115c158',
-        // collectionTypes: ['article', 'project'],
+        // accessToken: '488ba4f1626036dcffb58b4cd2a32c5a32ca1e920e8f42431ed525d6ce0467780bdb84730276f43e5152897df3134e709c2d403c9e1cae2aa0f5ee615893814571c2a49593536de99d09db1b5fb05ccec2a87fe2b927faf17dbfbfec489e4a12e000f74bc777d4b16ba3e6d2f766292ad5c66f2baaafd934f71518da9fe01fd0',
         collectionTypes: ['article', 'project'],
-        // contentTypes: ['articles', 'projects'],
+        singleTypes: ['support'],
       }
     },
     {

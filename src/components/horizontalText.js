@@ -20,8 +20,8 @@ const HorizontalText = () => {
     useEffect(() => {
         window.addEventListener("scroll", () => {
             let foo = window.scrollY
-            textRef.current.style.transform = `translateX(${foo * 0.1 }px)`;
-            textRefLeft.current.style.transform = `translateX(${-(foo * 0.2 )}px)`;
+            textRef.current.style.transform = `translateX(${foo * 0.05 }px)`;
+            textRefLeft.current.style.transform = `translateX(${-(foo * 0.15 )}px)`;
         });
 
         return () => {

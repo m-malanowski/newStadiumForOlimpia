@@ -3,8 +3,8 @@
 :root {
   --space-unit:  1.8rem;
 
-  @include breakpoint(sm, "not all") {
-    --space-unit:  1rem;
+  @include breakpoint(md, "not all") {
+    --space-unit:  .8rem;
   }
 }
 
