@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect} from "react";
 import {Link} from "gatsby";
-const Petition = () => {
+import {useForm, ValidationError} from '@formspree/react';
 
+const Petition = () => {
+    const [state, handleSubmit] = useForm("mnqypgna");
     const [number, setNumber] = useState(0);
 
     useEffect(() => {
@@ -14,11 +16,11 @@ const Petition = () => {
         fetchData();
     }, []);
 
-    const handleClick = async () => {
+    const handleSupportUpdate = async () => {
 
-       await fetch("https://stadion-dla-elblaga.herokuapp.com/api/support/", {
+        await fetch("https://stadion-dla-elblaga.herokuapp.com/api/support/", {
             method: "PUT",
-            headers: { "Content-Type": "application/json" },
+            headers: {"Content-Type": "application/json"},
             body: JSON.stringify({
                     "data": {
                         "number": number + 1,
@@ -34,7 +36,11 @@ const Petition = () => {
             <div className="grid gap-lg margin-top-xxl" id="petition">
                 <div className="col-6@md">
                     <h2 className="uppercase">Poparło nas: <br/> <span>{number} osób</span></h2>
-                    <Link to="/list-otwarty" className="link">Przeczytaj list otwarty <svg xmlns="http://www.w3.org/2000/svg" width="15" height="8" fill="none"><path fill="#0E6AAC" d="M14.354 4.354a.5.5 0 0 0 0-.708L11.172.464a.5.5 0 1 0-.708.708L13.293 4l-2.829 2.828a.5.5 0 1 0 .708.708l3.182-3.182ZM0 4.5h14v-1H0v1Z"/></svg></Link>
+                    <Link to="/list-otwarty" className="link">Przeczytaj list otwarty <svg
+                        xmlns="http://www.w3.org/2000/svg" width="15" height="8" fill="none">
+                        <path fill="#0E6AAC"
+                              d="M14.354 4.354a.5.5 0 0 0 0-.708L11.172.464a.5.5 0 1 0-.708.708L13.293 4l-2.829 2.828a.5.5 0 1 0 .708.708l3.182-3.182ZM0 4.5h14v-1H0v1Z"/>
+                    </svg></Link>
 
                 </div>
                 <div className="col-6@md">
@@ -42,19 +48,57 @@ const Petition = () => {
                         Ut enim ad minim veniam. quis nostrud exercitation
                     </h3>
 
-                    <form className="form"
-                          action="https://formspree.io/f/mnqypgna"
-                          method="POST"
-                    >
-                        <div className="form__inputs margin-top-lg">
-                            <input type="text" className="form__input" placeholder="Twoje imię" name="name" required/>
-                            <input type="text" className="form__input" placeholder="Twoje Nazwisko" name="email" required/>
-                            <input type="text" className="form__input" placeholder="Napisz coś więcej"
-                                   name="description" required/>
+                    {state.succeeded
+                        ?
+                        <h2 className="color-primary margin-y-xl">Dziękujęmy za wsparcie!</h2>
+                        :
+                        <form
+                            onSubmit={handleSubmit}
+                            className="form"
+                        >
+                            <div className="form__inputs margin-top-lg">
+                                <input type="text" className="form__input" placeholder="Twoje imię" name="name" id="name"
+                                       required/>
+                                <input type="text" className="form__input" placeholder="Twój email" name="email" id="email"
+                                       required/>
+                                <input type="text" className="form__input" placeholder="Napisz coś więcej"
+                                       name="description"/>
 
-                            <button onClick={handleClick} type="submit" className="button button--fourth margin-left-auto">Podpisz list</button>
-                        </div>
-                    </form>
+                                <ValidationError
+                                    prefix="Email"
+                                    field="email"
+                                    errors={state.errors}
+                                />
+                                <ValidationError
+                                    prefix="Name"
+                                    field="name"
+                                    errors={state.errors}
+                                />
+
+                                <button onClick={handleSupportUpdate} disabled={state.submitting} type="submit"
+                                        className="button button--fourth margin-left-auto">Podpisz list
+                                </button>
+                            </div>
+                        </form>
+
+                    }
+
+
+
+                    {/*<button onClick={handleSupportUpdate} className="button button--fourth margin-left-auto">Podpisz list</button>*/}
+
+                    {/*<form className="form"*/}
+                    {/*      action="https://formspree.io/f/mnqypgna"*/}
+                    {/*      method="POST"*/}
+                    {/*>*/}
+                    {/*    <div className="form__inputs margin-top-lg">*/}
+                    {/*        <input type="text" className="form__input" placeholder="Twoje imię" name="name" required/>*/}
+                    {/*        <input type="text" className="form__input" placeholder="Twoje Nazwisko" name="email" required/>*/}
+                    {/*        <input type="text" className="form__input" placeholder="Napisz coś więcej"*/}
+                    {/*               name="description" required/>*/}
+
+                    {/*    </div>*/}
+                    {/*</form>*/}
                 </div>
             </div>
         </div>

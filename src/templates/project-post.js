@@ -1,6 +1,5 @@
 import * as React from "react"
 import {Link, graphql} from "gatsby"
-import Layout from "../components/layout"
 import ArticleHero from "../components/articleHero";
 import Footer from "../components/footer";
 import Projects from "../components/projects";
@@ -8,7 +7,7 @@ import Projects from "../components/projects";
 const ArticleSingle = ({data, location}) => {
 
     return (
-        <Layout location={location}>
+        <>
             <ArticleHero title={data.article.title} />
 
             <div className="grid gap-md article__content">
@@ -38,10 +37,9 @@ const ArticleSingle = ({data, location}) => {
 
             </div>
 
-
             <Projects/>
             <Footer/>
-        </Layout>
+        </>
     )
 }
 
