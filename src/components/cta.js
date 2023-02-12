@@ -8,7 +8,7 @@ const Cta = () => {
             <div className="cta__content">
                 <h2 className="uppercase">Wesprzyj Elbląg</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
-                <button className="button button--primary margin-top-md">Podpisz list</button>
+                <a type="button" href="#petition" className="button button--primary margin-top-md">Podpisz list</a>
 
             </div>
         </div>

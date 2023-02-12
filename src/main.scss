@@ -1,9 +1,11 @@
 @use 'luminaFrame/base/_mixins.scss' as *;
 @use 'luminaFrame/base/breakpoints' as *;
 
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-  //background-color: var(--color-white);
   background-color: #f8f8f8;
   overflow-x: hidden;
 }

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import {Link} from "gatsby";
 const Petition = () => {
 
     const [number, setNumber] = useState(0);
@@ -33,7 +34,7 @@ const Petition = () => {
             <div className="grid gap-lg margin-top-xxl" id="petition">
                 <div className="col-6@md">
                     <h2 className="uppercase">Poparło nas: <br/> <span>{number} osób</span></h2>
-                    <a href="#" className="link">Przeczytaj list otwarty <svg xmlns="http://www.w3.org/2000/svg" width="15" height="8" fill="none"><path fill="#0E6AAC" d="M14.354 4.354a.5.5 0 0 0 0-.708L11.172.464a.5.5 0 1 0-.708.708L13.293 4l-2.829 2.828a.5.5 0 1 0 .708.708l3.182-3.182ZM0 4.5h14v-1H0v1Z"/></svg></a>
+                    <Link to="/list-otwarty" className="link">Przeczytaj list otwarty <svg xmlns="http://www.w3.org/2000/svg" width="15" height="8" fill="none"><path fill="#0E6AAC" d="M14.354 4.354a.5.5 0 0 0 0-.708L11.172.464a.5.5 0 1 0-.708.708L13.293 4l-2.829 2.828a.5.5 0 1 0 .708.708l3.182-3.182ZM0 4.5h14v-1H0v1Z"/></svg></Link>
 
                 </div>
                 <div className="col-6@md">
