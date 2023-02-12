@@ -170,15 +170,23 @@ body {
   &__cta {
     margin-top: var(--space-xxxl);
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
 
     @include breakpoint(md, "not all") {
       width: 100%;
-      display: flex;
-      flex-direction: column;
       align-content: center;
       align-items: center;
       text-align: center;
+      p{
+        width: 100%;
+      }
     }
+  }
+
+  p{
+    width: 60%;
   }
 
   h1, p {
