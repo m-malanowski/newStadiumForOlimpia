@@ -341,6 +341,7 @@ body {
   overflow: hidden;
   width: 100vw;
   margin-left: calc(var(--space-xxl) * -1);
+
   @include breakpoint(sm, "not all") {
     margin-left: calc(var(--space-md) * -1);
   }
