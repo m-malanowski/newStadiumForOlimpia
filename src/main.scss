@@ -65,7 +65,6 @@ body {
       gap: var(--space-sm);
 
       li {
-        //text-transform: uppercase;
         color: var(--color-white);
         font-size: 16px;
         letter-spacing: 1px;
@@ -88,10 +87,22 @@ body {
 
 .hero {
   display: flex;
-  height: 100vh;
-  width: 100%;
-  align-items: center;
+  height: 80vh;
+  width: 100vw;
+  margin-left: calc(var(--space-xxl) * -1);
+
   position: relative;
+  align-items: flex-end;
+  overflow: hidden;
+
+  @include breakpoint(sm, "not all") {
+    margin-left: calc(var(--space-md) * -1);
+  }
+
+  @include breakpoint(md, "not all") {
+    align-items: center;
+  }
+
 
   &--sub {
     height: 60vh;
@@ -120,16 +131,25 @@ body {
     object-fit: cover;
     -o-object-position: center center;
     object-position: center center;
-    margin-left: calc(var(--space-xxl) * -1);
+    //margin-left: calc(var(--space-xxl) * -1);
 
-    @include breakpoint(sm, "not all") {
-      margin-left: calc(var(--space-md) * -1);
-    }
-
-
+    //@include breakpoint(sm, "not all") {
+    //  margin-left: calc(var(--space-md) * -1);
+    //}
   }
 
   &__image--overlay {
+    //background: linear-gradient(0deg,#f8f8f8,rgba(255,255,255,.991) 6.67%,rgba(255,255,255,.965) 13.33%,rgba(255,255,255,.918) 20%,rgba(255,255,255,.853) 26.67%,rgba(255,255,255,.768) 33.33%,rgba(255,255,255,.668) 40%,rgba(255,255,255,.557) 46.67%,rgba(255,255,255,.443) 53.33%,rgba(255,255,255,.332) 60%,rgba(255,255,255,.232) 66.67%,rgba(255,255,255,.148) 73.33%,rgba(255,255,255,.082) 80%,rgba(255,255,255,.036) 86.67%,rgba(255,255,255,.009) 93.33%,rgba(255,255,255,0));
+    //background: linear-gradient(0deg,#00162b,rgba(0,22,43,.991) 6.67%,rgba(0,22,43,.965) 13.33%,rgba(0,22,43,.918) 20%,rgba(0,22,43,.853) 26.67%,rgba(0,22,43,.768) 33.33%,rgba(0,22,43,.668) 40%,rgba(0,22,43,.557) 46.67%,rgba(0,22,43,.443) 53.33%,rgba(0,22,43,.332) 60%,rgba(0,22,43,.232) 66.67%,rgba(0,22,43,.148) 73.33%,rgba(0,22,43,.082) 80%,rgba(0,22,43,.036) 86.67%,rgba(0,22,43,.009) 93.33%,rgba(0,22,43,0));
+    //content: "";
+    //height: 100%;
+    //left: 0;
+    //pointer-events: none;
+    //position: absolute;
+    //top: 0;
+    //width: 100vw;
+    //z-index: -1;
+
     position: absolute;
     top: 0;
     left: 0;
@@ -138,10 +158,10 @@ body {
     background-color: rgba(0, 0, 0, 0.3);
     z-index: -1;
 
-    margin-left: calc(var(--space-xxl) * -1);
-    @include breakpoint(sm, "not all") {
-      margin-left: calc(var(--space-md) * -1);
-    }
+    //margin-left: calc(var(--space-xxl) * -1);
+    //@include breakpoint(sm, "not all") {
+    //  margin-left: calc(var(--space-md) * -1);
+    //}
 
   }
 
@@ -155,7 +175,7 @@ body {
     border-radius: 100%;
     display: grid;
     place-items: center;
-    border: 1px solid var(--color-white);
+    border: 1px solid rgba(255,255,255,.5);
 
     svg{
       animation-name: bounce-1;
@@ -170,11 +190,18 @@ body {
   }
 
   &__cta {
-    margin-top: var(--space-xxxl);
+    margin: var(--space-lg) 0;
+
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: baseline;
+    margin-left: var(--space-xxl);
+
+    @include breakpoint(md, "not all") {
+      margin-left: var(--space-md);
+    }
+
 
     @include breakpoint(md, "not all") {
       width: 100%;
@@ -470,16 +497,23 @@ body {
 .article{
   &__content{
     margin: var(--space-xl) 0;
-    p{
+    p, ul, li, span{
       font-size: 20px;
       line-height: 1.4;
       color: var(--color-contrast-higher);
     }
+
   }
   &__social{
     display: flex;
     gap: var(--space-xs);
     align-items: flex-end;
+  }
+  &__title{
+    margin-left: var(--space-xxl);
+    @include breakpoint(sm, "not all") {
+      margin-left: var(--space-md);
+    }
   }
 }
 

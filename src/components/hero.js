@@ -13,7 +13,7 @@ const Hero = () => {
                             transition: {delay: .3, ...transition},
                         }}
                         exit={{
-                            height: "80vh",
+                            transform: "scale(1.2)",
                             transition: {delay: .2, ...transition},
                         }}
             ></motion.div>
@@ -21,8 +21,9 @@ const Hero = () => {
             <div className="hero__image--overlay"></div>
 
             <div className="hero__cta">
-                <h1>Nowy stadion <br/> dla Elbląga</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                <h1>Stadion dla <br/> Elbląga</h1>
+                <p>“Stadion dla Elbląga” to inicjatywa mieszkańców miasta, którzy mają dosyć marazmu i braku wywiązywania się z obietnic lokalnych polityków.  </p>
+
                 <a type="button" href="#petition" className="button button--secondary margin-top-lg"> Podpisz list </a>
             </div>
 

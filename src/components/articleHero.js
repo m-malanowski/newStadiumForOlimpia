@@ -11,31 +11,30 @@ const ArticleHero = ({title, data}) => {
         <div className="hero hero--article" >
             <motion.div className="hero__image"
                         style={backgroundImage}
-                        initial={{ height: "100vh" }}
+                        initial={{ transform: "scale(1.2)" }}
                         animate={{
                             backgroundImage: img,
-                            height: "60vh",
+                            transform: "scale(1)",
                             transition: {delay: .3, ...transition},
                         }}
                         exit={{
-                            height: "70vh",
+                            transform: "scale(1.2)",
                             transition: {delay: .2, ...transition},
                         }}
             ></motion.div>
             <motion.div className="hero__image--overlay"
-                        initial={{  height: "100vh" }}
+                        initial={{ transform: "scale(1.2)" }}
                         animate={{
-                            height: "60vh",
+                            transform: "scale(1)",
                             transition: {delay: .3, ...transition},
                         }}
                         exit={{
-                            height: "70vh",
+                            transform: "scale(1.2)",
                             transition: {delay: .2, ...transition},
                         }}
             ></motion.div>
 
-            <div className="grid gap-md margin-bottom-sm">
-
+            <div className="grid gap-md margin-bottom-sm article__title">
                 <div className="col-2@md">
                    <p> {data} </p>
                 </div>

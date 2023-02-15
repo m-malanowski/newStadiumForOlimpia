@@ -7,15 +7,13 @@ const Footer = () => {
             <div className="container">
                 <div className="footer">
                     <ul className="links">
-                        <li>Facebook</li>
-                        <li>Instagram</li>
+                        <li><a href="https://www.facebook.com/nowystadiondlaelblaga" target="_blank">Facebook</a></li>
+                        <li><a href="https://www.instagram.com/stadiondlaelblaga/" target="_blank">Instagram</a></li>
                     </ul>
                     <ul className="links">
                         <li><Link to="/" activeClassName="active-link">Główna</Link></li>
                         <li><Link to="/artykuly" activeClassName="active-link">Artykuły</Link></li>
-                        {/*<li><Link to="/kontakt" activeClassName="active-link">Wesprzyj nas</Link></li>*/}
                         <li><Link to="/podobne-realizacje" activeClassName="active-link">Podobne realizacje</Link></li>
-                        {/*<li><a href="https://zksolimpia.pl/">Olimpia Elbląg</a></li>*/}
                         <li><Link to="/kontakt" activeClassName="active-link">Kontakt</Link></li>
                     </ul>
 

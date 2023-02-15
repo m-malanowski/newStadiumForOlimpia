@@ -75,6 +75,9 @@ h1, h2, h3, h4, h5, h6 {
 
 p{
   font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1900 - 360)));
+  span{
+    color: var(--color-primary);
+  }
 }
 
 h1 {

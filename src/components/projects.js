@@ -11,6 +11,13 @@ const Projects = () => {
                 id
                 slug
                 title
+                media {
+                  localFile {
+                    childrenImageSharp {
+                      gatsbyImageData
+                    }
+                  }
+                }
                 content {
                   data {
                     content
@@ -23,6 +30,7 @@ const Projects = () => {
   `)
 
     return (
+
         <div className="section section--full section--primary">
             <div className="container grid gap-lg">
                 <h2 className="uppercase color-white projects__heading">Podobne realizacje</h2>

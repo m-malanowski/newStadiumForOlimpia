@@ -2,7 +2,7 @@ import * as React from "react";
 import foo from "../images/cta.jpg";
 import {Link} from "gatsby";
 
-const Card = ({title, date, content, slug}) => {
+const Card = ({title, date, content, slug, src}) => {
     const link = `/${slug}`
     return(
         <div className="card">

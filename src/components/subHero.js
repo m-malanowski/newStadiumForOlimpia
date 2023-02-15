@@ -12,25 +12,25 @@ const SubHero = ({title}) => {
         <div className="hero hero--sub">
             <motion.div className="hero__image"
                         style={backgroundImage}
-                        initial={{ height: "65vh" }}
+                        initial={{ transform: "scale(1.2)" }}
                         animate={{
                             backgroundImage: img,
-                            height: "60vh",
+                            transform: "scale(1)",
                             transition: {delay: .3, ...transition},
                         }}
                         exit={{
-                            height: "70vh",
+                            transform: "scale(1.2)",
                             transition: {delay: .2, ...transition},
                         }}
             ></motion.div>
             <motion.div className="hero__image--overlay"
-                        initial={{  height: "65vh" }}
+                        initial={{  transform: "scale(1.2)" }}
                         animate={{
-                            height: "60vh",
+                            transform: "scale(1)",
                             transition: {delay: .3, ...transition},
                         }}
                         exit={{
-                            height: "70vh",
+                            transform: "scale(1.2)",
                             transition: {delay: .2, ...transition},
                         }}
             ></motion.div>

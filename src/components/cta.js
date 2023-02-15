@@ -6,8 +6,8 @@ const Cta = () => {
             <div className="cta__image"></div>
             <div className="cta__image--overlay"></div>
             <div className="cta__content">
-                <h2 className="uppercase">Wesprzyj Elbląg</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                <h2 className="uppercase">Wesprzyj akcję</h2>
+                <p>Twoje poparcie ma znaczenie! Przeczytaj nasz list otwarty i podpisz go. Pokażmy ilu nas jest i jak wielką siłę stanowimy!</p>
                 <a type="button" href="#petition" className="button button--primary margin-top-md">Podpisz list</a>
 
             </div>

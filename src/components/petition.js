@@ -51,13 +51,11 @@ const Petition = () => {
 
                 </div>
                 <div className="col-6@md">
-                    <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <span>tempor incididunt ut labore et dolore magna aliqua</span>.
-                        Ut enim ad minim veniam. quis nostrud exercitation
-                    </h3>
+                    <h3>Dołącz do nas, <span>wyraź swoje poparcie</span> i wywalcz razem z nami stadion, który pozwoli nam walczyć o najwyższe cele sportowe!</h3>
 
                     {state.succeeded
                         ?
-                        <h2 className="color-primary margin-y-xl">Dziękujęmy za wsparcie!</h2>
+                        <h3 className="color-primary margin-y-xl">Dziękujęmy za wsparcie!</h3>
                         :
                         <form
                             onSubmit={foo}
