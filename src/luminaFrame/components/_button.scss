@@ -2,6 +2,10 @@
 
 button.button{
   padding: var(--space-xs) var(--space-md);
+
+  @include breakpoint(md, "not all") {
+    padding: var(--space-base) var(--space-lg);
+  }
 }
 .button {
   padding: var(--space-xxs) var(--space-md);
