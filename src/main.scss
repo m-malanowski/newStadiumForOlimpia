@@ -178,6 +178,7 @@ body {
     border: 1px solid rgba(255,255,255,.5);
     @include breakpoint(md, "not all") {
       right: var(--space-sm);
+      border: none
     }
 
     svg{
@@ -373,6 +374,11 @@ body {
     .card__preview {
       transform: scale(1.15);
     }
+  }
+
+  &__date{
+    color: var(--color-accent);
+    font-family: var(--font-bold);
   }
 
   &__title {
