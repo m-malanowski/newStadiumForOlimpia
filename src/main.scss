@@ -339,6 +339,11 @@ body {
 .horizontal-text {
   position: relative;
   overflow: hidden;
+  width: 100vw;
+  margin-left: calc(var(--space-xxl) * -1);
+  @include breakpoint(sm, "not all") {
+    margin-left: calc(var(--space-md) * -1);
+  }
 
   h2 {
     white-space: nowrap;
