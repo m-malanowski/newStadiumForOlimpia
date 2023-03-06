@@ -29,7 +29,7 @@ const Contact = ({data, location}) => {
 
                             <div className="col-6@md">
                                 <h5 className="color-accent margin-top-lg">Social media</h5>
-                                <ul className="contact__info">
+                                <ul className="contact__info contact__icons">
                                     <li>
                                         <a href="https://www.facebook.com/nowystadiondlaelblaga" target="_blank">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none">
@@ -75,7 +75,12 @@ const Contact = ({data, location}) => {
                                         oraz akceptuję politykę prywatności.</small>
                                 </div>
 
-                                <button type="submit" className="button button--third margin-left-auto">Wyślij
+                                <button type="submit" className="button button--third margin-left-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none">
+                                        <path fill="var(--color-primary)"
+                                              d="m12.657 11.657-1.998.018v-7.92L2.05 12.364.636 10.95l8.61-8.61h-7.92L1.342.344h11.314v11.314Z"/>
+                                    </svg>
+                                    Wyślij
                                     wiadomość
                                 </button>
                             </div>

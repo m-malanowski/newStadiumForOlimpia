@@ -348,7 +348,7 @@ body {
   h2 {
     white-space: nowrap;
     font-family: var(--font-primary-light);
-    font-size: calc(60px + (120 - 60) * ((100vw - 320px) / (1900 - 360)));
+    font-size: calc(80px + (120 - 60) * ((100vw - 320px) / (1900 - 360)));
     margin-left: calc(var(--space-xxxxl) * -1);
   }
 
@@ -375,8 +375,8 @@ body {
   }
 
   &__date{
-    color: var(--color-accent);
-    font-family: var(--font-bold);
+    color: var(--color-contrast-lower);
+    //font-family: var(--font-bold);
   }
 
   &__title {
@@ -526,6 +526,10 @@ body {
 
 
 .contact {
+  &__icons{
+    display: flex;
+    gap: var(--space-xs);
+  }
   &__info {
     padding: 0;
     list-style: none;

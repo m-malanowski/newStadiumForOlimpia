@@ -53,7 +53,6 @@ const About = () => {
 
 
             <HorizontalText />
-
             <Why/>
 
         </div>

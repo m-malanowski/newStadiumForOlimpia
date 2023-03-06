@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Test Light';
-  src: url('./../fonts/GTEestiProText-Thin.ttf') format("truetype");
+  src: url('./../fonts/GTEestiProText-Light.ttf') format("truetype");
   font-display: swap;
 }
 @font-face {
@@ -64,7 +64,6 @@ h1, h2, h3, h4, h5, h6 {
   //color: var(--color-contrast-higher, hsl(0, 0%, 15%));
   line-height: var(--heading-line-height, 1.2);
   font-weight: var(--heading-front-weight, 600);
-  font-weight: 600;
   margin: 1rem 0;
   font-family: var(--font-primary-light);
   color: var(--color-contrast-higher);
