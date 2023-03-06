@@ -528,7 +528,13 @@ body {
     }
   }
   &__body{
+    margin: var(--space-md) 0 var(--space-md) 0;
     display: none;
+    color: var(--color-contrast-lower);
+
+    &--open{
+      display: flex;
+    }
   }
 }
 

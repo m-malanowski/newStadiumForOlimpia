@@ -23,7 +23,7 @@ const Why = () => {
                                 </svg>
                             </div>
 
-                            <p className="why__body">Stadion powinien być miejscem  dla wszystkich mieszkańców. Niestety, zaniedbania sprawiły, że nie jest on przystosowany m.in. do komfortowego oglądania meczów przez osoby niepełnosprawne, a fatalne zaplecze sanitarne wręcz odstrasza część widzów. Walczymy o to, by każdy mógł zaznać smak emocji w godziwych warunkach!</p>
+                            <p className="why__body why__body--open">Stadion powinien być miejscem  dla wszystkich mieszkańców. Niestety, zaniedbania sprawiły, że nie jest on przystosowany m.in. do komfortowego oglądania meczów przez osoby niepełnosprawne, a fatalne zaplecze sanitarne wręcz odstrasza część widzów. Walczymy o to, by każdy mógł zaznać smak emocji w godziwych warunkach!</p>
 
                         </div>
                         <div className="why__single">
