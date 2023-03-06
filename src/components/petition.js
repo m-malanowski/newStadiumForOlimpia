@@ -84,7 +84,7 @@ const Petition = () => {
                                 <button
                                     disabled={state.submitting} type="submit"
                                         className="button button--fourth margin-left-auto">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none"><path fill="var(--color-white)" d="m12.657 11.657-1.998.018v-7.92L2.05 12.364.636 10.95l8.61-8.61h-7.92L1.342.344h11.314v11.314Z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none"><path fill="var(--color-primary)" d="m12.657 11.657-1.998.018v-7.92L2.05 12.364.636 10.95l8.61-8.61h-7.92L1.342.344h11.314v11.314Z"/></svg>
                                     <span>Podpisz list</span>
 
                                 </button>
