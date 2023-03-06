@@ -17,12 +17,10 @@ const About = () => {
 
                     <div className="flex">
                         <Link to="/list-otwarty" className="link margin-left-auto margin-top-md">Przeczytaj list otwarty
-
                             <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none">
                                 <path fill="var(--color-primary)"
                                       d="m12.657 11.657-1.998.018v-7.92L2.05 12.364.636 10.95l8.61-8.61h-7.92L1.342.344h11.314v11.314Z"/>
                             </svg>
-
                         </Link>
                     </div>
                 </div>

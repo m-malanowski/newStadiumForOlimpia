@@ -32,6 +32,10 @@ body {
   }
 
   &__logo-wrapper {
+    //temporary
+    font-family: var(--font-bold);
+    font-size: 28px;
+
     position: relative;
     margin-left: var(--space-xxl);
     @include breakpoint(lg, "not all") {
@@ -46,11 +50,11 @@ body {
   }
 
   &__links {
-    margin-left: var(--space-xxl);
+    //margin-left: var(--space-xxl);
 
-    @include breakpoint(lg, "not all") {
-      margin-left: revert;
-    }
+    //@include breakpoint(lg, "not all") {
+    //  margin-left: revert;
+    //}
 
     @include breakpoint(md, "not all") {
       display: none;
@@ -78,6 +82,7 @@ body {
     align-items: center;
     gap: var(--space-sm);
     margin-right: var(--space-xxl);
+
 
     @include breakpoint(md, "not all") {
       display: none;
@@ -166,15 +171,18 @@ body {
 
 
   &__down{
+    display: flex;
+    gap: var(--space-xs);
+
     position: absolute;
     right: var(--space-xxl);
     bottom: var(--space-lg);
-    width: 60px;
-    height: 60px;
-    border-radius: 100%;
-    display: grid;
-    place-items: center;
-    border: 1px solid rgba(255,255,255,.5);
+    //width: 60px;
+    //height: 60px;
+    //border-radius: 100%;
+    //display: grid;
+    //place-items: center;
+    //border: 1px solid rgba(255,255,255,.5);
     @include breakpoint(md, "not all") {
       right: var(--space-sm);
       border: none
@@ -188,7 +196,7 @@ body {
     }
 
     span{
-      color: var(--color-white  );
+      color: var(--color-white);
     }
   }
 
@@ -719,12 +727,10 @@ body {
 
 
 @keyframes bounce-1 {
-  0%   { transform: translateY(5px); }
-  50%  { transform: translateY(-5px); }
-  100% { transform: translateY(5px); }
+  0%   { transform: translateY(2px); }
+  50%  { transform: translateY(-2px); }
+  100% { transform: translateY(2px); }
 }
-
-
 
 
 
