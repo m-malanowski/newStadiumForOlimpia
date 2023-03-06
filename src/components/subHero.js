@@ -1,6 +1,6 @@
 import * as React from "react"
 import {motion} from "framer-motion";
-import img from "../images/cta.jpg";
+import img from "../images/cta2.jpg";
 
 const SubHero = ({title}) => {
     const transition = {duration: 1., ease: [0.6, 0.01, -0.05, 0.9]};
