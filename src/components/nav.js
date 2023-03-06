@@ -1,8 +1,9 @@
 import * as React from "react"
 import {StaticImage} from "gatsby-plugin-image";
-import { useState, useEffect } from "react"
+import {useState, useEffect} from "react"
 import {Link} from "gatsby";
-import {  motion } from "framer-motion"
+import {motion} from "framer-motion"
+
 const Nav = ({toggleSideBar, isOpen}) => {
     const [isScrolling, setIsScrolling] = useState(false)
 
@@ -61,7 +62,12 @@ const Nav = ({toggleSideBar, isOpen}) => {
                     </svg>
                 </a>
 
-                <a href="#petition" className="button button--primary">Podpisz list</a>
+                <a href="#petition" className="button button--primary">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none">
+                        <path fill="var(--color-contrast-higher)"
+                              d="m12.657 11.657-1.998.018v-7.92L2.05 12.364.636 10.95l8.61-8.61h-7.92L1.342.344h11.314v11.314Z"/>
+                    </svg>
+                    <span>Podpisz list </span></a>
             </div>
 
 
@@ -78,7 +84,7 @@ const Nav = ({toggleSideBar, isOpen}) => {
                 type="button" className="nav__toggle" onClick={toggleSideBar} aria-label="menu-button"
             >
 
-                <div className={`nav__hamburger ${isOpen? "transformed" : ""}`}>
+                <div className={`nav__hamburger ${isOpen ? "transformed" : ""}`}>
                     <div/>
                 </div>
             </motion.button>

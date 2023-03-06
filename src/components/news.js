@@ -12,6 +12,13 @@ const News = ({showHeading}) => {
                 slug
                 date
                 title
+                 media {
+                  localFile {
+                    childImageSharp {
+                      gatsbyImageData
+                    }
+                  }
+                }
                 content {
                   data {
                     content
@@ -26,7 +33,7 @@ const News = ({showHeading}) => {
     return (
         <div className="section">
             <div className="grid gap-lg">
-                <h2 className="uppercase news__heading">Aktualności</h2>
+                <h2 className=" news__heading">Aktualności</h2>
                 <div className="news">
 
                     {data.allStrapiArticle.edges.map(edge => (
@@ -35,6 +42,7 @@ const News = ({showHeading}) => {
                               date={edge.node.date}
                               content={edge.node.content.data.content}
                               slug={edge.node.slug}
+                              media={edge.node.media.localFile}
                         />
 
                     ))}

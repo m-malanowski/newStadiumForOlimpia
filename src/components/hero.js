@@ -1,5 +1,6 @@
 import * as React from "react"
 import {motion} from "framer-motion";
+import { TypeAnimation } from 'react-type-animation';
 
 const Hero = () => {
     const transition = {duration: 1., ease: [0.6, 0.01, -0.05, 0.9]};
@@ -21,10 +22,33 @@ const Hero = () => {
             <div className="hero__image--overlay"></div>
 
             <div className="hero__cta">
-                <h1>Stadion dla <br/> Elbląga</h1>
-                <p>“Stadion dla Elbląga” to inicjatywa mieszkańców miasta, którzy mają dosyć marazmu i braku wywiązywania się z obietnic lokalnych polityków.  </p>
 
-                <a type="button" href="#petition" className="button button--secondary margin-top-lg"> Podpisz list </a>
+                <TypeAnimation
+                    sequence={[
+                        'Moje miasto', // Types 'One'
+                        1000, // Waits 1s
+                        'Mój klub', // Deletes 'One' and types 'Two'
+                        2000, // Waits 2s
+                        'Moja Rodzina', // Types 'Three' without deleting 'Two'
+                        3000,
+                        () => {
+                            console.log('Done typing!'); // Place optional callbacks anywhere in the array
+                        }
+                    ]}
+                    wrapper="h1"
+                    cursor={true}
+                    repeat={Infinity}
+                />
+
+                <p>“Stadion dla Elbląga” to inicjatywa mieszkańców miasta, którzy mają dosyć marazmu i braku wywiązywania się z obietnic lokalnych polityków.
+                  <br/>
+                    Po latach ignorowania kibiców chcemy zawalczyć o nasze miejsce, nasz dom - stadion przy <b> Agrykola 8</b> .
+                </p>
+
+                <a type="button" href="#petition" className="button button--secondary margin-top-lg">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none"><path fill="var(--color-white)" d="m12.657 11.657-1.998.018v-7.92L2.05 12.364.636 10.95l8.61-8.61h-7.92L1.342.344h11.314v11.314Z"/></svg>
+                    <span>Podpisz list </span>
+                </a>
             </div>
 
             <div className="hero__down">

@@ -13,7 +13,11 @@ button.button{
   outline: none;
   border: none;
   font-size: 16px;
-  display: inline-block;
+  //display: inline-block;
+  display: flex;
+  gap: var(--space-xs);
+  align-items: center;
+
   text-align: center;
   transition: .15s ease-in-out all;
   font-weight: 400;
@@ -21,12 +25,29 @@ button.button{
   letter-spacing: 1px;
   font-family: var(--font-primary);
 
+  svg{
+    transition: .3s ease-in-out;
+  }
+
   @include breakpoint(md, "not all") {
     padding: var(--space-base) var(--space-lg);
   }
 
+  &--xl{
+    padding: var(--space-xs) var(--space-md);
+    font-size: 22px;
+    svg{
+      transform: scale(1.4);
+    }
+  }
+
   &:hover{
     cursor: pointer;
+
+    svg{
+      transition: .3s ease-in-out;
+      transform: rotate(45deg);
+    }
   }
 
   &--primary {

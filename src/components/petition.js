@@ -42,12 +42,13 @@ const Petition = () => {
         <div>
             <div className="grid gap-lg margin-top-xxl" id="petition">
                 <div className="col-6@md">
-                    <h2 className="uppercase">Poparło nas: <br/> <span>{number} osób</span></h2>
-                    <Link to="/list-otwarty" className="link">Przeczytaj list otwarty <svg
-                        xmlns="http://www.w3.org/2000/svg" width="15" height="8" fill="none">
-                        <path fill="#0E6AAC"
-                              d="M14.354 4.354a.5.5 0 0 0 0-.708L11.172.464a.5.5 0 1 0-.708.708L13.293 4l-2.829 2.828a.5.5 0 1 0 .708.708l3.182-3.182ZM0 4.5h14v-1H0v1Z"/>
-                    </svg></Link>
+                    <h2 >Poparło nas: <br/> <span>{number} osób</span></h2>
+                    {/*<Link to="/list-otwarty" className="link">Przeczytaj list otwarty*/}
+                    {/*    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none">*/}
+                    {/*        <path fill="var(--color-primary)"*/}
+                    {/*              d="m12.657 11.657-1.998.018v-7.92L2.05 12.364.636 10.95l8.61-8.61h-7.92L1.342.344h11.314v11.314Z"/>*/}
+                    {/*    </svg>*/}
+                    {/*</Link>*/}
 
                 </div>
                 <div className="col-6@md">
@@ -82,7 +83,10 @@ const Petition = () => {
 
                                 <button
                                     disabled={state.submitting} type="submit"
-                                        className="button button--fourth margin-left-auto">Podpisz list
+                                        className="button button--fourth margin-left-auto">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none"><path fill="var(--color-white)" d="m12.657 11.657-1.998.018v-7.92L2.05 12.364.636 10.95l8.61-8.61h-7.92L1.342.344h11.314v11.314Z"/></svg>
+                                    <span>Podpisz list</span>
+
                                 </button>
                             </div>
                         </form>

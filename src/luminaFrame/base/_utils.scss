@@ -250,9 +250,20 @@
 }
 
 .link{
+  //font-weight: 600;
+  font-family: var(--font-bold);
   color: var(--color-primary);
+
+  svg{
+    transform: rotate(0deg);
+    transition: .3s ease-in-out;
+  }
   &:hover{
-    text-decoration: underline;
+    //text-decoration: underline;
+    svg{
+      transform: rotate(45deg);
+      transition: .3s ease-in-out;
+    }
   }
   svg{
     margin-left: var(--space-xs);

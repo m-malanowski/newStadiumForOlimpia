@@ -9,21 +9,20 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Stadion Dla Elbląga`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Lumina Studio`,
+      summary: `Nowy stadion dla Elbląga`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsbystarterblogsource.gatsbyjs.io/`,
+    description: `Nowy stadion dla Elbląga`,
+    siteUrl: `https://stadiondlaelblaga.pl/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `Lumina Studio`,
     },
   },
   plugins: [
     `gatsby-plugin-image`,
     'gatsby-plugin-sass',
-
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -74,7 +73,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
+        name: `Stadion Dla Elbląga`,
         short_name: `Gatsby`,
         start_url: `/`,
         background_color: `#ffffff`,

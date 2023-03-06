@@ -13,7 +13,7 @@ const Projects = () => {
                 title
                 media {
                   localFile {
-                    childrenImageSharp {
+                    childImageSharp {
                       gatsbyImageData
                     }
                   }
@@ -33,14 +33,16 @@ const Projects = () => {
 
         <div className="section section--full section--primary">
             <div className="container grid gap-lg">
-                <h2 className="uppercase color-white projects__heading">Podobne realizacje</h2>
+                <h2 className="color-white projects__heading">Podobne realizacje</h2>
                 <div className="projects">
 
                     {data.allStrapiProject.edges.map(edge => (
 
-                        <Card title={edge.node.title}
+                        <Card
+                            title={edge.node.title}
                               content={edge.node.content.data.content}
                               slug={edge.node.slug}
+                              media={edge.node.media.localFile}
                         />
 
                     ))}

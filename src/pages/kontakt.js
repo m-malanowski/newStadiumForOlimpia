@@ -2,6 +2,7 @@ import * as React from "react";
 import {Helmet} from "react-helmet";
 import Footer from "../components/footer";
 import {graphql} from "gatsby";
+import Seo from "../components/seo";
 
 const Contact = ({data, location}) => {
     const siteTitle = data.site.siteMetadata?.title || `Title`
@@ -89,6 +90,7 @@ const Contact = ({data, location}) => {
 
 export default Contact
 
+export const Head = () => <Seo title="Stadion Dla Elbląga | Kontakt" />
 
 export const contactQuery = graphql`
       query MyQuery2 {
