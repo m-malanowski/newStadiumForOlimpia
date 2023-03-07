@@ -13,7 +13,7 @@ const Contact = ({data, location}) => {
                 id: "contact"
             }}/>
             <div className="section">
-                <div className="grid gap-xl margin-top-xxxl">
+                <div className="grid gap-xl margin-top-xl">
                     <div className="col-6@md">
                         <h3 className="color-white">Twoje poparcie ma znaczenie! Przeczytaj nasz list otwarty i podpisz go. Pokażmy ilu nas jest i jak wielką siłę stanowimy!</h3>
 
