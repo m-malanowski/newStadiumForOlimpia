@@ -7,6 +7,7 @@ import {motion} from "framer-motion"
 const Nav = ({toggleSideBar, isOpen}) => {
     const [isScrolling, setIsScrolling] = useState(false)
 
+
     useEffect(() => {
         const handleScroll = () => {
             setIsScrolling(window.scrollY > 10)

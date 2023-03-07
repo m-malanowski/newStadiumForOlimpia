@@ -22,8 +22,8 @@ const Contact = ({data, location}) => {
                                 <h5 className="color-accent margin-top-lg">Kontakt</h5>
                                 <ul className="contact__info">
                                     <li><a href="mailto: info@stadiodlaelblaga.pl">info@stadiodlaelblaga.pl</a></li>
-                                    <li>+48 509 870 672</li>
-                                    <li>+48 784 4760 857</li>
+                                    {/*<li>+48 509 870 672</li>*/}
+                                    {/*<li>+48 784 4760 857</li>*/}
                                 </ul>
                             </div>
 
