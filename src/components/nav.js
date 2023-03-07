@@ -70,7 +70,6 @@ const Nav = ({toggleSideBar, isOpen}) => {
                     <span>Podpisz list </span></a>
             </div>
 
-
             <motion.button
                 initial={{
                     opacity: 0,

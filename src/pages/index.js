@@ -9,6 +9,7 @@ import Petition from "../components/petition";
 import News from "../components/news";
 import Projects from "../components/projects";
 import Footer from "../components/footer";
+import FakeLoader from "../components/fakeLoader";
 
 const BlogIndex = ({ data, location }) => {
 

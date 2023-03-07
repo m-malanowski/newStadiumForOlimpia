@@ -12,7 +12,7 @@ const Hero = () => {
                         initial={{ transform: 'scale(1.2)',}}
                         animate={{
                             transform: 'scale(1)',
-                            transition: {delay: .3, ...transition},
+                            transition: {delay: 5.3, ...transition},
                         }}
                         exit={{
                             transform: "scale(1.2)",
@@ -29,20 +29,21 @@ const Hero = () => {
                         'Moje miasto', // Types 'One'
                         1000, // Waits 1s
                         'Mój klub', // Deletes 'One' and types 'Two'
-                        2000, // Waits 2s
+                        1000, // Waits 2s
                         'Moja Rodzina', // Types 'Three' without deleting 'Two'
-                        3000,
+                        1000,
                         () => {
                             console.log('Done typing!'); // Place optional callbacks anywhere in the array
                         }
                     ]}
+                    className="motto"
                     wrapper="h1"
                     cursor={true}
                     repeat={Infinity}
                 />
 
                 <p>“Stadion dla Elbląga” to inicjatywa mieszkańców miasta, którzy mają dosyć marazmu i braku wywiązywania się z obietnic lokalnych polityków.
-                    Po latach ignorowania kibiców chcemy zawalczyć o nasze miejsce, nasz dom - stadion przy <b> Agrykola 8</b>.
+                    Po latach ignorowania kibiców chcemy zawalczyć o nasze miejsce, <br/> nasz dom - stadion przy <b> Agrykola 8</b>.
                 </p>
 
                 <a type="button" href="#petition" className="button button--secondary margin-top-xl">

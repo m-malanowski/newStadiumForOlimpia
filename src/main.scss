@@ -209,6 +209,11 @@ body {
     align-items: baseline;
     margin-left: var(--space-xxl);
 
+    .index-module_type__E-SaG{
+      position: relative;
+      z-index: 10003;
+    }
+
     @include breakpoint(md, "not all") {
       margin-left: var(--space-md);
     }
@@ -227,6 +232,9 @@ body {
 
   p{
     width: 60%;
+    @include breakpoint(md, "not all") {
+      width: 80%;
+    }
   }
 
   h1, p {
@@ -637,7 +645,7 @@ body {
 
 
 .active-link{
-  color: var(--color-accent)
+  color: var(--color-accent);
 }
 .links{
   li{
@@ -755,4 +763,18 @@ img {
   -moz-user-select: -moz-none;
   -o-user-select: none;
   user-select: none;
+}
+
+
+.welcome{
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom:0;
+  width: 100vw;
+  height: 100%;
+  background-color: var(--color-primary);
+  z-index: 1001;
+  overflow: hidden;
 }
