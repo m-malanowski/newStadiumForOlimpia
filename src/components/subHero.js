@@ -10,30 +10,30 @@ const SubHero = ({title}) => {
 
     return (
         <div className="hero hero--sub">
-            <motion.div className="hero__image"
-                        style={backgroundImage}
-                        initial={{ transform: "scale(1.2)" }}
-                        animate={{
-                            backgroundImage: img,
-                            transform: "scale(1)",
-                            transition: {delay: .3, ...transition},
-                        }}
-                        exit={{
-                            transform: "scale(1.2)",
-                            transition: {delay: .2, ...transition},
-                        }}
-            ></motion.div>
-            <motion.div className="hero__image--overlay"
-                        initial={{  transform: "scale(1.2)" }}
-                        animate={{
-                            transform: "scale(1)",
-                            transition: {delay: .3, ...transition},
-                        }}
-                        exit={{
-                            transform: "scale(1.2)",
-                            transition: {delay: .2, ...transition},
-                        }}
-            ></motion.div>
+            {/*<motion.div className="hero__image"*/}
+            {/*            style={backgroundImage}*/}
+            {/*            initial={{ transform: "scale(1.2)" }}*/}
+            {/*            animate={{*/}
+            {/*                backgroundImage: img,*/}
+            {/*                transform: "scale(1)",*/}
+            {/*                transition: {delay: .3, ...transition},*/}
+            {/*            }}*/}
+            {/*            exit={{*/}
+            {/*                transform: "scale(1.2)",*/}
+            {/*                transition: {delay: .2, ...transition},*/}
+            {/*            }}*/}
+            {/*></motion.div>*/}
+            {/*<motion.div className="hero__image--overlay"*/}
+            {/*            initial={{  transform: "scale(1.2)" }}*/}
+            {/*            animate={{*/}
+            {/*                transform: "scale(1)",*/}
+            {/*                transition: {delay: .3, ...transition},*/}
+            {/*            }}*/}
+            {/*            exit={{*/}
+            {/*                transform: "scale(1.2)",*/}
+            {/*                transition: {delay: .2, ...transition},*/}
+            {/*            }}*/}
+            {/*></motion.div>*/}
 
             <div className="hero__cta">
                 <h1>{title}</h1>
