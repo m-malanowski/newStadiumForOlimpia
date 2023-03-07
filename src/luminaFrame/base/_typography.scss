@@ -28,7 +28,7 @@
   //--font-primary: 'Poppins Regular', 'Helvetica', 'Arial', sans-serif;
   //--font-primary-light: 'Poppins Light', 'Helvetica', 'Arial', sans-serif;
   //--font-primary-medium: 'Poppins Medium', 'Helvetica', 'Arial', sans-serif;
-  --body-font-weight: 600;
+  --body-font-weight: 500;
   --text-base-size: 10px;
   --text-scale-ratio: 1.55;
 
@@ -90,6 +90,7 @@ h2 {
   font-size: calc(34px + (64 - 34 ) * ((100vw - 320px) / (1900 - 360)));
   //font-size: var(--text-xxl, 1.75rem);
   //letter-spacing: -4px;
+  font-family: var(--font-primary);
 }
 
 h3 {

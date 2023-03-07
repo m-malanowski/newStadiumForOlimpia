@@ -215,6 +215,8 @@ body {
     .index-module_type__E-SaG{
       position: relative;
       z-index: 10003;
+      font-family: var(--font-primary);
+
     }
 
     @include breakpoint(md, "not all") {
@@ -783,3 +785,46 @@ img {
   z-index: 1001;
   overflow: hidden;
 }
+
+
+
+.accordion__section {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: none;
+  outline: none;
+  transition: background-color 0.6s ease;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: var(--space-xs) 0;
+}
+
+
+/* Style the accordion chevron icon */
+.accordion__icon {
+  margin-left: auto;
+  transition: transform 0.6s ease;
+}
+
+.rotate {
+  transform: rotate(90deg);
+  transition: transform 0.6s ease;
+}
+
+.accordion__content {
+  overflow: hidden;
+  transition: max-height 0.6s ease;
+}
+
+.accordion__text {
+  color: var(--color-contrast-lower);
+  padding: var(--space-md) 0;
+}
+
