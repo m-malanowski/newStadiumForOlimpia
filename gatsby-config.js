@@ -12,9 +12,9 @@ module.exports = {
     title: `Stadion Dla Elbląga`,
     author: {
       name: `Lumina Studio`,
-      summary: `Nowy stadion dla Elbląga`,
+      summary: `Stadion dla Elbląga`,
     },
-    description: `Nowy stadion dla Elbląga`,
+    description: `Stadion dla Elbląga`,
     siteUrl: `https://stadiondlaelblaga.pl/`,
     social: {
       twitter: `Lumina Studio`,
@@ -71,22 +71,6 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Stadion Dla Elbląga`,
-        short_name: `Gatsby`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        // This will impact how browsers show your PWA/website
-        // https://css-tricks.com/meta-theme-color-and-trickery/
-        // theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      },
-    },
-
-
-    {
       resolve: "gatsby-plugin-google-tagmanager",
       options: {
         id: "GTM-MCN62M5",
@@ -118,6 +102,25 @@ module.exports = {
         selfHostedOrigin: "YOUR_SELF_HOSTED_ORIGIN",
       },
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `stadiondlaelblaga.pl`,
+        short_name: `stadiondlaelblaga.pl`,
+        start_url: `/`,
+        background_color: `#0e69aa`,
+        theme_color: `#fbe228`,
+        // This will impact how browsers show your PWA/website
+        // https://css-tricks.com/meta-theme-color-and-trickery/
+        // theme_color: `#663399`,
+        display: `minimal-ui`,
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
+        icon_options: {
+          purpose: `maskable`,
+        },
+      },
+    },
+    `gatsby-plugin-offline`,
 
 
   ],
