@@ -136,7 +136,7 @@ body {
 
   &__image {
     background-image: url("images/main.jpg");
-    background-position: center;
+    background-position: bottom;
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -189,7 +189,6 @@ body {
   &__down{
     display: flex;
     gap: var(--space-xs);
-
     position: absolute;
     right: var(--space-xxl);
     bottom: var(--space-lg);
@@ -200,8 +199,9 @@ body {
     //place-items: center;
     //border: 1px solid rgba(255,255,255,.5);
     @include breakpoint(md, "not all") {
-      right: var(--space-sm);
-      border: none
+      bottom: var(--space-lg);
+      right: 50%;
+      transform: translate(50%,-50%);
     }
 
     svg{

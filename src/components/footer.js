@@ -15,6 +15,8 @@ const Footer = () => {
                         <li><Link to="/artykuly" activeClassName="active-link">Artykuły</Link></li>
                         <li><Link to="/podobne-realizacje" activeClassName="active-link">Podobne realizacje</Link></li>
                         <li><Link to="/kontakt" activeClassName="active-link">Kontakt</Link></li>
+                        <li>Credits</li>
+
                     </ul>
 
                     <p>© 2023 stadiondlaelblaga.pl</p>

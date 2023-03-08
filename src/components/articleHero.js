@@ -1,6 +1,6 @@
 import * as React from "react"
 import {motion} from "framer-motion";
-import img from '../images/cta2.jpg'
+import img from '../images/main.jpg'
 const ArticleHero = ({title, data}) => {
     const transition = {duration: 2., ease: [0.6, 0.01, -0.05, 0.9]};
     const backgroundImage = {
@@ -11,10 +11,12 @@ const ArticleHero = ({title, data}) => {
         <div className="hero hero--article" >
             <motion.div className="hero__image"
                         style={backgroundImage}
-                        initial={{ transform: "scale(1.2)" }}
+                        initial={{ transform: "scale(1.2)", height: "100vh" }}
                         animate={{
                             backgroundImage: img,
                             transform: "scale(1)",
+                            height: "60vh",
+
                             transition: {delay: .3, ...transition},
                         }}
                         exit={{
