@@ -42,9 +42,7 @@ const Hero = () => {
                     repeat={Infinity}
                 />
 
-                <p>“Stadion dla Elbląga” to inicjatywa mieszkańców miasta, którzy mają dosyć marazmu i braku wywiązywania się z obietnic lokalnych polityków.
-                    Po latach ignorowania kibiców chcemy zawalczyć o nasze miejsce, <br/> nasz dom - stadion przy <b> Agrykola 8</b>.
-                </p>
+                <h4 className="color-white">Po latach ignorowania kibiców chcemy zawalczyć <br/> o nasze miejsce, nasz dom - stadion przy <b> Agrykola 8</b>.</h4>
 
                 <a type="button" href="#petition" className="button button--secondary margin-top-xl">
                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none"><path fill="var(--color-white)" d="m12.657 11.657-1.998.018v-7.92L2.05 12.364.636 10.95l8.61-8.61h-7.92L1.342.344h11.314v11.314Z"/></svg>

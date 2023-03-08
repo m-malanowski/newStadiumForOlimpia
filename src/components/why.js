@@ -10,7 +10,7 @@ const Why = () => {
             </div>
 
             <div className="col-6@md">
-                <h3>Facere harum ipsam maiores necessitatibus neque nobis repellat repellendus saepe sit, totam ullam, voluptatum?</h3>
+                <h3 className="margin-bottom-xl">Facere harum ipsam maiores necessitatibus neque nobis repellat repellendus saepe sit, totam ullam, voluptatum?</h3>
 
                 <Accordion title="Szansa dla Elblążan" content="Stadion powinien być miejscem dla wszystkich mieszkańców. Niestety, zaniedbania sprawiły, że nie jest on przystosowany m.in. do komfortowego oglądania meczów przez osoby niepełnosprawne, a fatalne zaplecze sanitarne wręcz odstrasza część widzów. Walczymy o to, by każdy mógł zaznać smak emocji w godziwych warunkach!"/>
                 <Accordion title="Symbol rozwoju Elbląga" content="Ponad 30 lat inwestycji w drogi, port, centra usługowo-handlowe to chluba miasta. Ubolewamy, że modernizacja ominęła najważniejszy obiekt sportowy w mieście - stadion przy agrykola 8 - który jest przedmiotem żartów kibiców i komentatorów sportowych z całej Polski."/>
