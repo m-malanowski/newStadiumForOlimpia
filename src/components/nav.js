@@ -42,7 +42,7 @@ const Nav = ({toggleSideBar, isOpen}) => {
             <div className="nav__links">
                 <ul className="links">
                     {/*<li><Link to="/" activeClassName="active-link">Główna</Link></li>*/}
-                    {/*<li><a href="/">Główna</a></li>*/}
+                    <li><a href="/">Główna</a></li>
                     <li><Link to="/artykuly" activeClassName="active-link">Artykuły</Link></li>
                     <li><Link to="/podobne-inwestycje" activeClassName="active-link">Podobne inwestycje</Link></li>
                     <li><Link to="/kontakt" activeClassName="active-link">Kontakt</Link></li>
