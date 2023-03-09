@@ -16,7 +16,7 @@ export const wrapPageElement = ({ element, props }) => {
     return <Layout {...props}>{element}</Layout>;
 };
 
-const transitionDelay = 500
+const transitionDelay = 1500
 export const shouldUpdateScroll = ({ routerProps: { location }, getSavedScrollPosition }) => {
     if (location.action === "PUSH") {
         window.setTimeout(() => window.scrollTo(0, 0), transitionDelay)
@@ -28,4 +28,9 @@ export const shouldUpdateScroll = ({ routerProps: { location }, getSavedScrollPo
         )
     }
     return false
+}
+
+
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
 }

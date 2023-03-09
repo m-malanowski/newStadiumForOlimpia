@@ -9,12 +9,13 @@ import Petition from "../components/petition";
 import News from "../components/news";
 import Projects from "../components/projects";
 import Footer from "../components/footer";
-import FakeLoader from "../components/fakeLoader";
+// import FakeLoader from "../components/fakeLoader";
 
 const BlogIndex = ({ data, location }) => {
 
   return (
     <>
+        {/*<FakeLoader/>*/}
         <Hero />
         <About />
         <Cta />
@@ -31,9 +32,14 @@ const BlogIndex = ({ data, location }) => {
 }
 
 export default BlogIndex
-
-export const Head = () => <Seo title="Stadion Dla Elbląga | Wesprzyj Naszą Iniciatywę" />
-
+export function Head() {
+    return (
+        <>
+            {/*<body className="overflow" />*/}
+            <Seo title="Stadion Dla Elbląga | Wesprzyj Naszą Iniciatywę" />
+        </>
+    )
+}
 export const pageQuery = graphql`
   {
     site {

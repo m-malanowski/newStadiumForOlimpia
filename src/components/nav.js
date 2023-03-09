@@ -3,6 +3,7 @@ import {StaticImage} from "gatsby-plugin-image";
 import {useState, useEffect} from "react"
 import {Link} from "gatsby";
 import {motion} from "framer-motion"
+import {layoutVariants} from "./variants";
 
 const Nav = ({toggleSideBar, isOpen}) => {
     const [isScrolling, setIsScrolling] = useState(false)
@@ -19,7 +20,13 @@ const Nav = ({toggleSideBar, isOpen}) => {
     }, [])
 
     return (
-        <nav className={isScrolling ? "nav active" : "nav"}>
+        <motion.nav className={isScrolling ? "nav active" : "nav"}
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    exit="exit"
+                    transition={{ delay: 5, duration: .6, ease: "easeInOut" }}
+
+        >
             <a href="/" className="nav__logo-wrapper color-white">
                 stadiondlaelblaga.pl
                 {/*<StaticImage*/}
@@ -35,6 +42,7 @@ const Nav = ({toggleSideBar, isOpen}) => {
             <div className="nav__links">
                 <ul className="links">
                     <li><Link to="/" activeClassName="active-link">Główna</Link></li>
+                    {/*<li><a href="/">Główna</a></li>*/}
                     <li><Link to="/artykuly" activeClassName="active-link">Artykuły</Link></li>
                     <li><Link to="/podobne-realizacje" activeClassName="active-link">Podobne realizacje</Link></li>
                     <li><Link to="/kontakt" activeClassName="active-link">Kontakt</Link></li>
@@ -89,7 +97,7 @@ const Nav = ({toggleSideBar, isOpen}) => {
                 </div>
             </motion.button>
 
-        </nav>
+        </motion.nav>
     )
 }
 export default Nav
