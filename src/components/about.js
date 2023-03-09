@@ -7,7 +7,7 @@ import FadeInWhenVisible from "./fadeInWhenVisible";
 
 const About = () => {
     return (
-        <div className="section">
+        <div className="section" id="about">
 
             <div className="grid gap-lg">
                 <div className="col-6@md">

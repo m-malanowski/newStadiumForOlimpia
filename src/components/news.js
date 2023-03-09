@@ -35,7 +35,7 @@ const News = ({showHeading}) => {
         <div className="section">
             <div className="grid gap-lg">
                 <FadeInWhenVisible delay={.2}>
-                    <h2 className=" news__heading">Aktualności</h2>
+                    <h2 className=" news__heading">Artykuły</h2>
                 </FadeInWhenVisible>
                 <div className="news">
 

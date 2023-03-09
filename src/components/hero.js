@@ -57,7 +57,7 @@ const Hero = () => {
             </div>
 
             <div className="hero__down">
-                <span>Scroll down for more</span>
+                <a href="/#about" className="color-white">Scroll down for more</a>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none"><path fill="var(--color-white)" d="m0 8 1.4-1.425 5.6 5.6V0h2v12.175l5.6-5.6L16 8l-8 8-8-8Z"/></svg>
             </div>
 
