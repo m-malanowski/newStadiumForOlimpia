@@ -8,7 +8,7 @@ const ArticleSingle = ({data, location}) => {
 
     return (
         <>
-            <ArticleHero title={data.article.title} />
+            <ArticleHero title={data.article.title} media={data.article.media.localFile.childrenImageSharp[0]}/>
 
             <div className="grid gap-md article__content">
 

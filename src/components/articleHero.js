@@ -1,29 +1,37 @@
 import * as React from "react"
 import {motion} from "framer-motion";
-import img from '../images/main.jpg'
-const ArticleHero = ({title, data}) => {
+// import img from '../images/main.jpg'
+import {GatsbyImage, getImage } from "gatsby-plugin-image"
+
+const ArticleHero = ({title, data, media}) => {
     const transition = {duration: 2., ease: [0.6, 0.01, -0.05, 0.9]};
-    const backgroundImage = {
-        backgroundImage: `url(${img})`
-    }
+    const image = getImage(media)
+
+    console.log(image, 'image')
+    console.log(media, 'media')
+
+    // const backgroundImage = {
+    //     backgroundImage: `url(${media})`
+    // }
+
 
     return (
-        <div className="hero hero--article" >
-            <motion.div className="hero__image"
-                        style={backgroundImage}
-                        initial={{ transform: "scale(1.2)", height: "100vh" }}
-                        animate={{
-                            backgroundImage: img,
-                            transform: "scale(1)",
-                            height: "60vh",
+        <div className="hero hero--article">
 
-                            transition: {delay: .3, ...transition},
-                        }}
-                        exit={{
-                            transform: "scale(1.2)",
-                            transition: {delay: .2, ...transition},
-                        }}
-            ></motion.div>
+            <GatsbyImage image={image} alt={title} />
+
+            {/*<motion.div className="hero__image"*/}
+            {/*            style={backgroundImage}*/}
+            {/*            initial={{ transform: "scale(1.2)"}}*/}
+            {/*            animate={{*/}
+            {/*                transform: "scale(1)",*/}
+            {/*                transition: {delay: .3, ...transition},*/}
+            {/*            }}*/}
+            {/*            exit={{*/}
+            {/*                transform: "scale(1.2)",*/}
+            {/*                transition: {delay: .2, ...transition},*/}
+            {/*            }}*/}
+            {/*></motion.div>*/}
             <motion.div className="hero__image--overlay"
                         initial={{ transform: "scale(1.2)" }}
                         animate={{
@@ -41,7 +49,7 @@ const ArticleHero = ({title, data}) => {
                    <p> {data} </p>
                 </div>
                 <div className="col-8@md">
-                    <h1>{title}</h1>
+                    <h1> {title} </h1>
                 </div>
                 <div className="col-2@md"></div>
 

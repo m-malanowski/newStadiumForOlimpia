@@ -9,7 +9,7 @@ const ArticleSingle = ({data, location}) => {
 
     return (
         <>
-            <ArticleHero title={data.article.title} data={data.article.date} />
+            <ArticleHero title={data.article.title} data={data.article.date} media={data.article.media.localFile.childrenImageSharp[0]} />
 
             <div className="grid gap-md article__content">
 
@@ -59,6 +59,13 @@ export const query = graphql`
         id
         slug
         title
+        media {
+          localFile {
+            childrenImageSharp {
+              gatsbyImageData
+            }
+          }
+        }
         date
         content {
           data {

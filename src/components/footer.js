@@ -15,8 +15,7 @@ const Footer = () => {
                         <li><Link to="/artykuly" activeClassName="active-link">Artykuły</Link></li>
                         <li><Link to="/podobne-inwestycje" activeClassName="active-link">Podobne inwestycje</Link></li>
                         <li><Link to="/kontakt" activeClassName="active-link">Kontakt</Link></li>
-                        <li>Credits</li>
-
+                        <li className="tooltip">Credits <span className="tooltiptext">Fot. Olimpia Elbląg</span></li>
                     </ul>
 
                     <p>© 2023 stadiondlaelblaga.pl</p>

@@ -1,7 +1,7 @@
 import * as React from "react";
 import {Link} from "gatsby";
-
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
+
 const Card = ({title, date, content, slug, media}) => {
     const link = `/${slug}`
     const image = getImage(media)
