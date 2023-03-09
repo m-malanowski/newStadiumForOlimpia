@@ -55,14 +55,13 @@ const About = () => {
                             </FadeInWhenVisible>
 
 
-                            <FadeInWhenVisible delay={.3}>
-                                <p >Lata zaniedbań doprowadziły do tego, że piłkarze Olimpii Elbląg musieli zrezygnować nawet z gotowości do gry o awans do wyższej ligi, gdyż obecny stadion nie spełnia warunków licencyjnych wymaganych do gry w pierwszej lidze.</p>
 
-                            </FadeInWhenVisible>
 
                         </div>
                         <div className="col-6@md">
-
+                            <FadeInWhenVisible delay={.3}>
+                                <p >Lata zaniedbań doprowadziły do tego, że piłkarze Olimpii Elbląg musieli zrezygnować nawet z gotowości do gry o awans do wyższej ligi, gdyż obecny stadion nie spełnia warunków licencyjnych wymaganych do gry w pierwszej lidze.</p>
+                            </FadeInWhenVisible>
                             <FadeInWhenVisible delay={.3}>
                                 <p> <span> “Stadion dla Elbląga”</span> to inicjatywa mieszkańców miasta, którzy mają dosyć marazmu i braku wywiązywania się z obietnic lokalnych polityków. To akcja, która ma dać możliwość wszystkim sympatykom piłki nożnej, a także piłkarzom Olimpii godnie reprezentować miasto podczas meczów u siebie. </p>
                             </FadeInWhenVisible>
