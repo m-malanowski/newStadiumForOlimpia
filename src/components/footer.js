@@ -11,9 +11,9 @@ const Footer = () => {
                         <li><a href="https://www.instagram.com/stadiondlaelblaga/" target="_blank">Instagram</a></li>
                     </ul>
                     <ul className="links">
-                        <li><Link to="/" activeClassName="active-link">Główna</Link></li>
+                        {/*<li><Link to="/" activeClassName="active-link">Główna</Link></li>*/}
                         <li><Link to="/artykuly" activeClassName="active-link">Artykuły</Link></li>
-                        <li><Link to="/podobne-realizacje" activeClassName="active-link">Podobne realizacje</Link></li>
+                        <li><Link to="/podobne-inwestycje" activeClassName="active-link">Podobne inwestycje</Link></li>
                         <li><Link to="/kontakt" activeClassName="active-link">Kontakt</Link></li>
                         <li>Credits</li>
 

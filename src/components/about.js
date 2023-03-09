@@ -1,8 +1,9 @@
 import * as React from "react"
 import {Link} from "gatsby";
-import Projects from "./projects";
+// import Projects from "./projects";
 import Why from "./why";
 import HorizontalText from "./horizontalText";
+// import FadeInWhenVisible from "./fadeInWhenVisible";
 
 const About = () => {
     return (
@@ -10,10 +11,17 @@ const About = () => {
 
             <div className="grid gap-lg">
                 <div className="col-6@md">
-                    <h2>Kim jesteśmy?</h2>
+
+                    {/*<FadeInWhenVisible delay={.1}>*/}
+                        <h2>Kim jesteśmy?</h2>
+                    {/*</FadeInWhenVisible>*/}
+
                 </div>
                 <div className="col-6@md">
-                    <h3>Jesteśmy kibicami, przyjaciółmi, lokalnymi patriotami, a przede wszystkim mieszkańcami Elbląga. Zrzeszeni w <span>Stowarzyszeniu Kibiców Olimpii Elbląg</span> chcemy wziąć sprawy w swoje ręce.</h3>
+                    {/*<FadeInWhenVisible delay={.2}>*/}
+                        <h3>Jesteśmy kibicami, przyjaciółmi, lokalnymi patriotami, a przede wszystkim mieszkańcami Elbląga. Zrzeszeni w <span>Stowarzyszeniu Kibiców Olimpii Elbląg</span> chcemy wziąć sprawy w swoje ręce.</h3>
+                    {/*</FadeInWhenVisible>*/}
+
 
                     <div className="flex">
                         <Link to="/list-otwarty" className="link margin-left-auto margin-top-md">Przeczytaj list otwarty

@@ -3,7 +3,7 @@ import Nav from "./nav";
 import Sidebar from "./sidebar";
 import { motion, AnimatePresence } from "framer-motion"
 import { layoutVariants, transition } from '../components/variants'
-import FakeLoader from "./fakeLoader";
+// import FakeLoader from "./fakeLoader";
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -17,7 +17,7 @@ const Layout = ({ location, title, children }) => {
   return (
     <div data-is-root-path={isRootPath}>
 
-      <FakeLoader/>
+      {/*<FakeLoader/>*/}
 
       <Nav isOpen={isOpen}  toggleSideBar={toggleSideBar} />
         <Sidebar isOpen={isOpen}  toggleSideBar={toggleSideBar} />

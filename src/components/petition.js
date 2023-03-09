@@ -43,16 +43,20 @@ const Petition = () => {
             <div className="grid gap-lg margin-top-xxl" id="petition">
                 <div className="col-6@md">
                     <h2 >Poparło nas: <br/> <span>{number} osób</span></h2>
-                    {/*<Link to="/list-otwarty" className="link">Przeczytaj list otwarty*/}
-                    {/*    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none">*/}
-                    {/*        <path fill="var(--color-primary)"*/}
-                    {/*              d="m12.657 11.657-1.998.018v-7.92L2.05 12.364.636 10.95l8.61-8.61h-7.92L1.342.344h11.314v11.314Z"/>*/}
-                    {/*    </svg>*/}
-                    {/*</Link>*/}
+
 
                 </div>
                 <div className="col-6@md">
                     <h3>Dołącz do nas, <span>wyraź swoje poparcie</span> i wywalcz razem z nami stadion, który pozwoli nam walczyć o najwyższe cele sportowe!</h3>
+
+                    <div className="flex">
+                        <Link to="/list-otwarty" className="link margin-left-auto margin-top-md">Przeczytaj list otwarty
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none">
+                                <path fill="var(--color-primary)"
+                                      d="m12.657 11.657-1.998.018v-7.92L2.05 12.364.636 10.95l8.61-8.61h-7.92L1.342.344h11.314v11.314Z"/>
+                            </svg>
+                        </Link>
+                    </div>
 
                     {state.succeeded
                         ?

@@ -24,7 +24,7 @@ const Nav = ({toggleSideBar, isOpen}) => {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                     exit="exit"
-                    transition={{ delay: 5, duration: .6, ease: "easeInOut" }}
+                    transition={{ delay: 5.1, duration: .6, ease: "easeInOut" }}
 
         >
             <a href="/" className="nav__logo-wrapper color-white">
@@ -41,10 +41,10 @@ const Nav = ({toggleSideBar, isOpen}) => {
 
             <div className="nav__links">
                 <ul className="links">
-                    <li><Link to="/" activeClassName="active-link">Główna</Link></li>
+                    {/*<li><Link to="/" activeClassName="active-link">Główna</Link></li>*/}
                     {/*<li><a href="/">Główna</a></li>*/}
                     <li><Link to="/artykuly" activeClassName="active-link">Artykuły</Link></li>
-                    <li><Link to="/podobne-realizacje" activeClassName="active-link">Podobne realizacje</Link></li>
+                    <li><Link to="/podobne-inwestycje" activeClassName="active-link">Podobne inwestycje</Link></li>
                     <li><Link to="/kontakt" activeClassName="active-link">Kontakt</Link></li>
                 </ul>
             </div>

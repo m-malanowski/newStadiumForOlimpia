@@ -85,6 +85,7 @@ body {
         color: var(--color-white);
         font-size: 16px;
         letter-spacing: 1px;
+        font-weight: 600;
       }
     }
   }
@@ -192,12 +193,6 @@ body {
     position: absolute;
     right: var(--space-xxl);
     bottom: var(--space-lg);
-    //width: 60px;
-    //height: 60px;
-    //border-radius: 100%;
-    //display: grid;
-    //place-items: center;
-    //border: 1px solid rgba(255,255,255,.5);
     @include breakpoint(md, "not all") {
       bottom: var(--space-lg);
       right: 50%;
@@ -213,6 +208,7 @@ body {
 
     span{
       color: var(--color-white);
+      font-weight: 600;
     }
   }
 

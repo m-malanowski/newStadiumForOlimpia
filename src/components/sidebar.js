@@ -9,7 +9,7 @@ const Sidebar = ({toggleSideBar, isOpen}) => {
                     <ul className="sidebar__links">
                         <li><Link to="/" activeClassName="active-link">Główna</Link></li>
                         <li><Link to="/artykuly" activeClassName="active-link">Artykuły</Link></li>
-                        <li><Link to="/podobne-realizacje" activeClassName="active-link">Podobne realizacje</Link></li>
+                        <li><Link to="/podobne-inwestycje" activeClassName="active-link">Podobne inwestycje</Link></li>
                         <li><Link to="/kontakt" activeClassName="active-link">Kontakt</Link></li>
                     </ul>
 
