@@ -1,7 +1,6 @@
 import React from "react"
-import {motion} from "framer-motion";
-function FadeInWhenVisible({children, delay}) {
-    // const transition = {delay: .6, duration: 1, ease: [0.11, 0, 0.5, 0]};
+import { motion } from "framer-motion";
+function FadeInWhenVisible({children, delay, nameOfClass}) {
 
     const variants = {
         initial: {
@@ -13,14 +12,19 @@ function FadeInWhenVisible({children, delay}) {
             opacity: 1,
             transition: {
                 delay: delay,
-                duration: .6,
-                ease: [0, 0.55, 0.45, 1]
+                duration: 1,
+                ease: [0, 0.55, 0.45, 1],
+                staggerChildren: 2.5
             }
         },
         exit: {
             y: 5,
             opacity: 0,
-            delay: 1
+            transition: {
+                delay: .2,
+                duration: .4,
+                ease: [0, 0.55, 0.45, 1],
+            }
         }
     }
     return (
@@ -30,6 +34,7 @@ function FadeInWhenVisible({children, delay}) {
             variants={variants}
             initial="initial"
             exit="exit"
+            className={nameOfClass}
         >
             {children}
         </motion.div>

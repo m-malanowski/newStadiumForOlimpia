@@ -29,7 +29,6 @@ const Layout = ({ location, title, children }) => {
                   initial="initial"
                   animate="enter"
                   exit="exit"
-                  transition={{ duration: .6, ease: [0.6, 0.01, -0.05, 0.9] }}
             >
                 {children}
             </motion.main>

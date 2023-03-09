@@ -540,6 +540,7 @@ body {
 
 .why{
 
+
   &__head{
     display: flex;
     justify-content: space-between;
@@ -870,4 +871,10 @@ img {
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
   visibility: visible;
+}
+
+
+.sticky{
+  position: sticky;
+  top: var(--space-md);
 }

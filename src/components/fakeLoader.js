@@ -8,7 +8,7 @@ const FakeLoader = () => {
             initial={{opacity: 1}}
             animate={{
                 opacity: 0,
-                transition: {delay: 5.0, when: "beforeChildren", duration: .3},
+                transition: {delay: 5.2, when: "beforeChildren", duration: .3},
                 transitionEnd: {
                     display: "none"
                 }

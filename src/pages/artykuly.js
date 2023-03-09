@@ -6,6 +6,7 @@ import Projects from "../components/projects";
 import Footer from "../components/footer";
 import {Helmet} from "react-helmet";
 import Seo from "../components/seo";
+
 const Articles = ({data, location}) => {
     const siteTitle = data.site.siteMetadata?.title || `Title`
 

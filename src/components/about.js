@@ -3,7 +3,7 @@ import {Link} from "gatsby";
 // import Projects from "./projects";
 import Why from "./why";
 import HorizontalText from "./horizontalText";
-// import FadeInWhenVisible from "./fadeInWhenVisible";
+import FadeInWhenVisible from "./fadeInWhenVisible";
 
 const About = () => {
     return (
@@ -12,15 +12,15 @@ const About = () => {
             <div className="grid gap-lg">
                 <div className="col-6@md">
 
-                    {/*<FadeInWhenVisible delay={.1}>*/}
+                    <FadeInWhenVisible delay={.3}>
                         <h2>Kim jesteśmy?</h2>
-                    {/*</FadeInWhenVisible>*/}
+                    </FadeInWhenVisible>
 
                 </div>
                 <div className="col-6@md">
-                    {/*<FadeInWhenVisible delay={.2}>*/}
+                    <FadeInWhenVisible delay={.3}>
                         <h3>Jesteśmy kibicami, przyjaciółmi, lokalnymi patriotami, a przede wszystkim mieszkańcami Elbląga. Zrzeszeni w <span>Stowarzyszeniu Kibiców Olimpii Elbląg</span> chcemy wziąć sprawy w swoje ręce.</h3>
-                    {/*</FadeInWhenVisible>*/}
+                    </FadeInWhenVisible>
 
 
                     <div className="flex">
@@ -36,21 +36,36 @@ const About = () => {
 
             <div className="grid gap-lg margin-top-xxl">
                 <div className="col-6@md">
-                    <h2 >O co chodzi?</h2>
+
+                    <FadeInWhenVisible delay={.3}>
+                        <h2 >O co chodzi?</h2>
+                    </FadeInWhenVisible>
                 </div>
                 <div className="col-6@md">
                     <div className="grid gap-lg">
                         <div className="col-6@md">
-                            <p>Obecny stadion przy <span>Agrykola 8</span> to relikt pamiętający nie tylko poprzedni ustrój, ale także czasy przedwojenne. Na przestrzeni lat, mimo rozwoju i modernizacji Elbląga, obiekt pozostawał w zapomnieniu włodarzy miasta i samorządowców. </p>
 
-                            <p>Wielokrotnie byliśmy zwodzeni wizjami budowy nowego czy też generalnego remontu dotychczasowego stadionu. Były to jednak tylko przedwyborcze obietnice, które szybko wykreślono z planów inwestycyjnych. </p>
+                            <FadeInWhenVisible delay={.3}>
+                                <p>Obecny stadion przy <span>Agrykola 8</span> to relikt pamiętający nie tylko poprzedni ustrój, ale także czasy przedwojenne. Na przestrzeni lat, mimo rozwoju i modernizacji Elbląga, obiekt pozostawał w zapomnieniu włodarzy miasta i samorządowców. </p>
+                            </FadeInWhenVisible>
 
-                            <p >Lata zaniedbań doprowadziły do tego, że piłkarze Olimpii Elbląg musieli zrezygnować nawet z gotowości do gry o awans do wyższej ligi, gdyż obecny stadion nie spełnia warunków licencyjnych wymaganych do gry w pierwszej lidze.</p>
+
+                            <FadeInWhenVisible delay={.3}>
+                                <p>Wielokrotnie byliśmy zwodzeni wizjami budowy nowego czy też generalnego remontu dotychczasowego stadionu. Były to jednak tylko przedwyborcze obietnice, które szybko wykreślono z planów inwestycyjnych. </p>
+                            </FadeInWhenVisible>
+
+
+                            <FadeInWhenVisible delay={.3}>
+                                <p >Lata zaniedbań doprowadziły do tego, że piłkarze Olimpii Elbląg musieli zrezygnować nawet z gotowości do gry o awans do wyższej ligi, gdyż obecny stadion nie spełnia warunków licencyjnych wymaganych do gry w pierwszej lidze.</p>
+
+                            </FadeInWhenVisible>
 
                         </div>
                         <div className="col-6@md">
 
-                            <p> <span> “Stadion dla Elbląga”</span> to inicjatywa mieszkańców miasta, którzy mają dosyć marazmu i braku wywiązywania się z obietnic lokalnych polityków. To akcja, która ma dać możliwość wszystkim sympatykom piłki nożnej, a także piłkarzom Olimpii godnie reprezentować miasto podczas meczów u siebie. </p>
+                            <FadeInWhenVisible delay={.3}>
+                                <p> <span> “Stadion dla Elbląga”</span> to inicjatywa mieszkańców miasta, którzy mają dosyć marazmu i braku wywiązywania się z obietnic lokalnych polityków. To akcja, która ma dać możliwość wszystkim sympatykom piłki nożnej, a także piłkarzom Olimpii godnie reprezentować miasto podczas meczów u siebie. </p>
+                            </FadeInWhenVisible>
 
                         </div>
                     </div>

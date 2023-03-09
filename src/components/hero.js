@@ -16,7 +16,7 @@ const Hero = () => {
                         }}
                         exit={{
                             transform: "scale(1.2)",
-                            transition: {delay: .2, ...transition},
+                            transition: {delay: .1, ...transition},
                         }}
             ></motion.div>
 
@@ -42,12 +42,12 @@ const Hero = () => {
                     repeat={Infinity}
                 />
 
-                <FadeInWhenVisible delay={5.4}>
+                <FadeInWhenVisible delay={5.8}>
                     <h3 className="color-white">Po latach ignorowania kibiców chcemy zawalczyć <br/> o nasze miejsce, nasz dom - stadion przy <b> Agrykola 8</b>.</h3>
                 </FadeInWhenVisible>
 
 
-                <FadeInWhenVisible delay={5.6}>
+                <FadeInWhenVisible delay={6}>
                     <a type="button" href="#petition" className="button button--secondary margin-top-xl">
                         <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" fill="none"><path fill="var(--color-white)" d="m12.657 11.657-1.998.018v-7.92L2.05 12.364.636 10.95l8.61-8.61h-7.92L1.342.344h11.314v11.314Z"/></svg>
                         <span>Podpisz list</span>

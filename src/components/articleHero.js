@@ -7,14 +7,6 @@ const ArticleHero = ({title, data, media}) => {
     const transition = {duration: 2., ease: [0.6, 0.01, -0.05, 0.9]};
     const image = getImage(media)
 
-    console.log(image, 'image')
-    console.log(media, 'media')
-
-    // const backgroundImage = {
-    //     backgroundImage: `url(${media})`
-    // }
-
-
     return (
         <div className="hero hero--article">
 

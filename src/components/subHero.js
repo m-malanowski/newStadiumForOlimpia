@@ -1,6 +1,7 @@
 import * as React from "react"
 import {motion} from "framer-motion";
 import img from "../images/cta2.jpg";
+import FadeInWhenVisible from "./fadeInWhenVisible";
 
 const SubHero = ({title}) => {
     const transition = {duration: 1., ease: [0.6, 0.01, -0.05, 0.9]};
@@ -36,7 +37,9 @@ const SubHero = ({title}) => {
             {/*></motion.div>*/}
 
             <div className="hero__cta">
-                <h1>{title}</h1>
+                <FadeInWhenVisible delay={.3}>
+                    <h1>{title}</h1>
+                </FadeInWhenVisible>
             </div>
         </div>
     )

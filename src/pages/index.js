@@ -16,15 +16,10 @@ const BlogIndex = ({ data, location }) => {
   return (
     <>
         <FakeLoader/>
-
         <Hero />
         <About />
         <Cta />
-
-        {/*<HorizontalText />*/}
-
         <Petition />
-
         <News />
         <Projects />
         <Footer />

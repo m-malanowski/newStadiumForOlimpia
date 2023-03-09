@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import {Link} from "gatsby";
 import {useForm, ValidationError} from '@formspree/react';
+import FadeInWhenVisible from "./fadeInWhenVisible";
 
 const Petition = () => {
     const [state, handleSubmit] = useForm("mnqypgna");
@@ -42,12 +43,15 @@ const Petition = () => {
         <div>
             <div className="grid gap-lg margin-top-xxl" id="petition">
                 <div className="col-6@md">
-                    <h2 >Poparło nas: <br/> <span>{number} osób</span></h2>
-
-
+                    <FadeInWhenVisible delay={.3} nameOfClass="sticky">
+                        <h2>Poparło nas: <br/> <span>{number} osób</span></h2>
+                    </FadeInWhenVisible>
                 </div>
                 <div className="col-6@md">
-                    <h3>Dołącz do nas, <span>wyraź swoje poparcie</span> i wywalcz razem z nami stadion, który pozwoli nam walczyć o najwyższe cele sportowe!</h3>
+
+                    <FadeInWhenVisible delay={.3}>
+                        <h3>Dołącz do nas, <span>wyraź swoje poparcie</span> i wywalcz razem z nami stadion, który pozwoli nam walczyć o najwyższe cele sportowe!</h3>
+                    </FadeInWhenVisible>
 
                     <div className="flex">
                         <Link to="/list-otwarty" className="link margin-left-auto margin-top-md">Przeczytaj list otwarty
